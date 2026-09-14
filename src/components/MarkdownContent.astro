@@ -54,6 +54,7 @@ renderer.code = ({ text = '', lang = '', escaped = false }) => {
   const source = escaped ? text : escapeHtml(text);
 
   if (language === 'jsfiddle') return renderJsFiddle(text);
+  if (language === 'mermaid') return renderMermaid(text);
 
   const embedMatch = rawLanguage.match(/^embed:(\w+)$/);
   if (embedMatch) {
@@ -124,6 +125,24 @@ function highlightCode(source, language) {
   }
 
   return output.replace(/\uE000(\d+)\uE001/g, (_, index) => slots[index]);
+}
+
+function renderMermaid(source) {
+  return `<section class="diagram" data-diagram aria-label="Interactive diagram">
+    <div class="diagram__toolbar">
+      <span class="diagram__label">Diagram</span>
+      <span class="diagram__actions" role="group" aria-label="Diagram controls">
+        <button type="button" class="diagram__button" data-diagram-zoom-in aria-label="Zoom in">+</button>
+        <button type="button" class="diagram__button" data-diagram-zoom-out aria-label="Zoom out">−</button>
+        <button type="button" class="diagram__button" data-diagram-reset>Reset</button>
+      </span>
+    </div>
+    <div class="diagram__viewport" data-diagram-viewport tabindex="0" aria-label="Diagram canvas. Drag to pan; use the controls to zoom.">
+      <div class="diagram__canvas" data-diagram-canvas>
+        <pre data-diagram-source>${escapeHtml(source)}</pre>
+      </div>
+    </div>
+  </section>`;
 }
 
 function renderJsFiddle(value) {
@@ -267,12 +286,76 @@ function escapeHtml(value) {
 <div class="prose"><div data-markdown-content set:html={html} /></div>
 
 <script is:inline>
+  let mermaidPromise;
+  const loadMermaid = () => mermaidPromise ||= import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs').then(({ default: mermaid }) => {
+    mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: 'neutral' });
+    return mermaid;
+  });
+
   document.querySelectorAll('[data-markdown-content]').forEach((root) => {
     if (root.dataset.enhanced) return;
     root.dataset.enhanced = 'true';
 
     root.querySelectorAll('[data-preview-srcdoc]').forEach((frame) => {
       frame.srcdoc = frame.dataset.previewSrcdoc || '';
+    });
+
+    root.querySelectorAll('[data-diagram]').forEach((diagram, diagramIndex) => {
+      const viewport = diagram.querySelector('[data-diagram-viewport]');
+      const canvas = diagram.querySelector('[data-diagram-canvas]');
+      const source = diagram.querySelector('[data-diagram-source]')?.textContent || '';
+      let scale = 1;
+      let offsetX = 0;
+      let offsetY = 0;
+      let pointerStart;
+
+      const applyTransform = () => {
+        canvas.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+        diagram.dataset.zoom = String(scale);
+      };
+      const reset = () => { scale = 1; offsetX = 0; offsetY = 0; applyTransform(); };
+      const zoom = (amount) => {
+        scale = Math.min(3, Math.max(.5, scale + amount));
+        applyTransform();
+      };
+
+      diagram.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-diagram-zoom-in], [data-diagram-zoom-out], [data-diagram-reset]');
+        if (!button) return;
+        if (button.matches('[data-diagram-zoom-in]')) zoom(.25);
+        if (button.matches('[data-diagram-zoom-out]')) zoom(-.25);
+        if (button.matches('[data-diagram-reset]')) reset();
+      });
+      viewport.addEventListener('pointerdown', (event) => {
+        if (event.button !== 0) return;
+        pointerStart = { id: event.pointerId, x: event.clientX, y: event.clientY, offsetX, offsetY, dragging: false };
+        viewport.setPointerCapture?.(event.pointerId);
+      });
+      viewport.addEventListener('pointermove', (event) => {
+        if (!pointerStart || pointerStart.id !== event.pointerId) return;
+        const dx = event.clientX - pointerStart.x;
+        const dy = event.clientY - pointerStart.y;
+        if (!pointerStart.dragging && Math.hypot(dx, dy) < 6) return;
+        // Only capture predominantly horizontal gestures; vertical movement remains page scroll.
+        if (!pointerStart.dragging && Math.abs(dy) > Math.abs(dx)) return;
+        pointerStart.dragging = true;
+        event.preventDefault();
+        offsetX = pointerStart.offsetX + dx;
+        offsetY = pointerStart.offsetY + dy;
+        applyTransform();
+      });
+      const stopDragging = () => { pointerStart = undefined; };
+      viewport.addEventListener('pointerup', stopDragging);
+      viewport.addEventListener('pointercancel', stopDragging);
+
+      loadMermaid().then((mermaid) => mermaid.render(`diagram-${Date.now()}-${diagramIndex}`, source)).then(({ svg }) => {
+        canvas.innerHTML = svg;
+        canvas.querySelector('svg')?.setAttribute('aria-label', 'Rendered diagram');
+        canvas.querySelector('svg')?.setAttribute('role', 'img');
+        applyTransform();
+      }).catch(() => {
+        diagram.dataset.diagramError = 'true';
+      });
     });
 
     const copy = async (button, value) => {

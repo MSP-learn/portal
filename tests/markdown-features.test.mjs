@@ -20,3 +20,15 @@ test('built markdown pages expose interactive code, image, accordion, and edit c
   assert.match(page, /language-html/);
   assert.match(page, /Edit on GitHub/);
 });
+
+test('built Mermaid pages expose bounded diagram controls without code-block chrome', () => {
+  execFileSync(buildCommand[0], buildCommand[1], { stdio: 'pipe' });
+  const page = readFileSync('dist/docs/sources/azure-knowledge/concepts/azure-well-architected/index.html', 'utf8');
+
+  assert.match(page, /data-diagram/);
+  assert.match(page, /data-diagram-zoom-in/);
+  assert.match(page, /data-diagram-zoom-out/);
+  assert.match(page, /data-diagram-reset/);
+  assert.match(page, /data-diagram-viewport/);
+  assert.doesNotMatch(page, /code-block[^>]+data-language="mermaid"/);
+});

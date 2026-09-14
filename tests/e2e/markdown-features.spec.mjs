@@ -20,6 +20,30 @@ test('external links, youtube, and file embeds', async ({ page }) => {
   await expect(openRaw).toHaveAttribute('rel', 'noopener noreferrer');
 });
 
+test('Mermaid diagrams provide zoom and pointer pan controls', async ({ page }) => {
+  await page.goto('/docs/sources/azure-knowledge/concepts/azure-well-architected/');
+
+  const diagram = page.locator('[data-diagram]').first();
+  await expect(diagram).toBeVisible();
+  await expect(diagram.getByRole('button', { name: 'Zoom in' })).toBeVisible();
+  await expect(diagram.getByRole('button', { name: 'Zoom out' })).toBeVisible();
+  await expect(diagram.getByRole('button', { name: 'Reset' })).toBeVisible();
+
+  await diagram.getByRole('button', { name: 'Zoom in' }).click();
+  await expect(diagram).toHaveAttribute('data-zoom', '1.25');
+  await diagram.getByRole('button', { name: 'Reset' }).click();
+  await expect(diagram).toHaveAttribute('data-zoom', '1');
+
+  const viewport = diagram.locator('[data-diagram-viewport]');
+  const box = await viewport.boundingBox();
+  if (!box) throw new Error('Diagram viewport has no bounds');
+  await page.mouse.move(box.x + 300, box.y + 110);
+  await page.mouse.down();
+  await page.mouse.move(box.x + 350, box.y + 110);
+  await page.mouse.up();
+  await expect(diagram.locator('[data-diagram-canvas]')).toHaveAttribute('style', /translate\(50px/);
+});
+
 test('markdown enhancements work in the published docs page', async ({ page }) => {
   await page.goto('/docs/markdown-features/');
 
