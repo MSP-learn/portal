@@ -11,11 +11,13 @@ const clonesDir = path.join(tmpDir, 'clones');
 const aggregatedDir = path.join(tmpDir, 'aggregated');
 const publicSourcesDir = path.join(root, 'public', '_sources');
 const generatedDir = path.join(root, 'src', 'generated');
+const timestampsDir = path.join(tmpDir, 'timestamps');
 
 await fs.mkdir(clonesDir, { recursive: true });
 await fs.mkdir(aggregatedDir, { recursive: true });
 await fs.mkdir(publicSourcesDir, { recursive: true });
 await fs.mkdir(generatedDir, { recursive: true });
+await fs.mkdir(timestampsDir, { recursive: true });
 
 await cleanDir(aggregatedDir);
 await cleanDir(publicSourcesDir);
@@ -38,6 +40,23 @@ for (const source of sources) {
 
   await copyDir(docsDir, targetDir);
   await copyDir(docsDir, publicDir);
+
+  // Extract per-file git timestamps from the source repo
+  const timestamps = {};
+  const mdFiles = await walkMarkdown(docsDir);
+  for (const file of mdFiles) {
+    const relPath = path.relative(docsDir, file).replace(/\\/g, '/');
+    try {
+      const { stdout } = await execFileAsync('git', ['log', '-1', '--format=%ai', '--', path.relative(repoDir, file)], { cwd: repoDir });
+      const date = stdout.trim();
+      if (date) {
+        timestamps[relPath] = new Date(date).toISOString();
+      }
+    } catch {
+      // If git log fails, skip this file's timestamp
+    }
+  }
+  await fs.writeFile(path.join(timestampsDir, `${metadata.id}.json`), JSON.stringify(timestamps, null, 2));
 
   synced.push({
     id: metadata.id,
@@ -93,4 +112,18 @@ async function copyDir(from, to) {
       await fs.copyFile(src, dest);
     }
   }
+}
+
+async function walkMarkdown(dir) {
+  const out = [];
+  const entries = await fs.readdir(dir, { withFileTypes: true }).catch(() => []);
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      out.push(...await walkMarkdown(full));
+    } else if (/\.md$/i.test(entry.name)) {
+      out.push(full);
+    }
+  }
+  return out;
 }

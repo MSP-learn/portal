@@ -2,6 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const root = process.cwd();
+const tmpDir = path.join(root, '.tmp');
+const timestampsDir = path.join(tmpDir, 'timestamps');
 const generatedDir = path.join(root, 'src', 'generated');
 const portalDir = path.join(root, 'content', 'portal');
 const sources = JSON.parse(await fs.readFile(path.join(generatedDir, 'sources.json'), 'utf8'));
@@ -9,6 +11,49 @@ const sources = JSON.parse(await fs.readFile(path.join(generatedDir, 'sources.js
 const portalPages = await loadPortalPages();
 const sourceGroups = [];
 const sourcePages = [];
+
+// Load timestamps sidecar data
+const timestampsData = {};
+for (const source of sources) {
+  try {
+    const tsPath = path.join(timestampsDir, `${source.id}.json`);
+    timestampsData[source.id] = JSON.parse(await fs.readFile(tsPath, 'utf8'));
+  } catch {
+    timestampsData[source.id] = {};
+  }
+}
+
+// Fetch GitHub issues per source repo and build a map: sourceId -> label -> issues
+const issuesBySource = {};
+for (const source of sources) {
+  issuesBySource[source.id] = {};
+  try {
+    const apiUrl = `https://api.github.com/repos/${source.repo}/issues?state=all&per_page=100`;
+    const headers = { Accept: 'application/vnd.github.v3+json', 'User-Agent': 'MSP-Portal' };
+    const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '';
+    if (token) headers.Authorization = `token ${token}`;
+    const res = await fetch(apiUrl, { headers });
+    if (res.ok) {
+      const issues = await res.json();
+      for (const issue of issues) {
+        // Find the label that matches page:<source-id>/<slug>
+        const pageLabel = issue.labels.find((l) => l.name && l.name.startsWith(`page:${source.id}/`));
+        if (pageLabel) {
+          const slug = pageLabel.name.slice(`page:${source.id}/`.length);
+          if (!issuesBySource[source.id][slug]) issuesBySource[source.id][slug] = [];
+          issuesBySource[source.id][slug].push({
+            title: issue.title,
+            number: issue.number,
+            state: issue.state,
+            htmlUrl: issue.html_url
+          });
+        }
+      }
+    }
+  } catch {
+    // If the API call fails, skip issues for this source (don't break the build)
+  }
+}
 
 for (const source of sources) {
   const docs = await walkMarkdown(path.join(root, source.sourceDir));
@@ -92,6 +137,10 @@ async function buildSourcePage(source, file) {
   const slugBits = ['sources', source.id, ...relativePath.replace(/\.md$/i, '').split('/')];
   if (isReadmePage(relativePath)) slugBits.pop();
   const href = `/docs/${slugBits.join('/')}/`;
+  const slug = slugBits.join('/');
+  const pageSlug = relativePath.replace(/\.md$/i, '');
+  const updatedAt = (timestampsData[source.id] || {})[relativePath] || null;
+  const issues = (issuesBySource[source.id] || {})[pageSlug] || [];
   return {
     kind: 'source',
     title: getTitle(raw, relativePath),
@@ -100,7 +149,7 @@ async function buildSourcePage(source, file) {
     headings: getHeadings(raw),
     file: path.relative(root, file).replace(/\\/g, '/'),
     relativePath,
-    slug: slugBits.join('/'),
+    slug,
     href,
     category: source.category,
     sourceId: source.id,
@@ -111,7 +160,9 @@ async function buildSourcePage(source, file) {
     repoUrl: source.repoUrl,
     defaultBranch: source.defaultBranch || 'main',
     docsPath: source.docsPath || 'docs',
-    tags: source.tags
+    tags: source.tags,
+    updatedAt,
+    issues
   };
 }
 
