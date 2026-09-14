@@ -192,6 +192,18 @@ input, textarea, button, select { font: inherit; caret-color: var(--ink); }
 .youtube-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 8px; border: 1px solid var(--line); }
 .markdown-svg { display: block; margin: 1.5rem 0; }
 .markdown-svg svg { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 7px; }
+.diagram { margin: 1.5rem 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.diagram__toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 12px; border-bottom: 1px solid var(--line); background: var(--paper-strong); }
+.diagram__label { color: var(--ink); font-size: 13px; font-weight: 650; }
+.diagram__actions { display: flex; gap: 6px; }
+.diagram__button { min-width: 32px; min-height: 30px; padding: 4px 9px; border: 1px solid var(--line-strong); border-radius: 5px; background: var(--surface); color: var(--ink); cursor: pointer; font-size: 13px; font-weight: 650; }
+.diagram__button:hover { border-color: var(--accent); background: var(--accent-soft); }
+.diagram__viewport { min-height: 220px; max-height: min(70vh, 680px); overflow: hidden; overscroll-behavior: contain; cursor: grab; touch-action: pan-y; background: #fff; }
+.diagram__viewport:active { cursor: grabbing; }
+.diagram__canvas { display: flex; width: max-content; min-width: 100%; min-height: 220px; align-items: center; justify-content: center; padding: 28px; transform-origin: center center; transition: transform 120ms ease-out; }
+.diagram__canvas svg { display: block; width: auto; max-width: none; height: auto; }
+.diagram__canvas pre { width: 100%; margin: 0; border-radius: 0; white-space: pre-wrap; color: var(--ink-soft); background: var(--paper-strong); }
+.diagram[data-diagram-error='true']::after { display: block; padding: 0 14px 12px; color: var(--ink-muted); content: 'Diagram preview unavailable; source shown above.'; font-size: 12px; }
 .image-lightbox { width: min(92vw, 1200px); max-width: none; max-height: 92vh; padding: 42px 18px 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
 .image-lightbox::backdrop { background: rgba(23, 25, 29, .72); }
 .image-lightbox img { display: block; max-width: 100%; max-height: calc(92vh - 60px); margin: auto; object-fit: contain; }
