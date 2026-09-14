@@ -116,7 +116,8 @@ const hrefFor = (href) => withBase(base, href);
                     <input id="question-title" name="title" required maxlength="200" placeholder="What would you like to know?" />
                     <label for="question-details">Details</label>
                     <textarea id="question-details" name="details" required maxlength="5000" rows="5" placeholder="Add context or steps that will help answer your question."></textarea>
-                    <p class="question-dialog__hint">Your response will open a pre-filled GitHub issue for this documentation page.</p>
+                    <input class="question-dialog__trap" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                    <p class="question-dialog__hint">Your question is submitted securely and tagged to this documentation page.</p>
                     <div class="question-dialog__actions">
                       <button type="submit" class="button button--question">Continue to GitHub <span aria-hidden="true">↗</span></button>
                     </div>
@@ -171,19 +172,33 @@ const hrefFor = (href) => withBase(base, href);
     questionDialog?.addEventListener('click', (event) => {
       if (event.target === questionDialog) questionDialog.close();
     });
-    questionForm?.addEventListener('submit', (event) => {
+    questionForm?.addEventListener('submit', async (event) => {
       event.preventDefault();
       const form = new FormData(questionForm);
       const title = String(form.get('title') || '').trim();
       const details = String(form.get('details') || '').trim();
       if (!title || !details) return;
       const issueTitle = `Question about: ${questionSlug} — ${title}`;
-      const url = new URL(`https://github.com/${questionRepo}/issues/new`);
-      url.searchParams.set('title', issueTitle);
-      url.searchParams.set('body', details);
-      url.searchParams.set('labels', questionLabel);
-      window.open(url.toString(), '_blank', 'noopener,noreferrer');
-      questionDialog?.close();
+      const fallback = new URL(`https://github.com/${questionRepo}/issues/new`);
+      fallback.searchParams.set('title', issueTitle);
+      fallback.searchParams.set('body', details);
+      fallback.searchParams.set('labels', questionLabel);
+      const handoff = window.open('', '_blank');
+      try {
+        const response = await fetch('/api/questions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ title, details, repo: questionRepo, label: questionLabel, website: form.get('website') || '' })
+        });
+        if (!response.ok) throw new Error('Question service unavailable');
+        if (handoff) handoff.location = (await response.json()).url;
+        questionDialog?.close();
+      } catch {
+        // Static deployments can use GitHub's pre-filled form without exposing a token.
+        if (handoff) handoff.location = fallback.toString();
+        else window.location.href = fallback.toString();
+        questionDialog?.close();
+      }
     });
 
     const docsShell = document.querySelector('[data-docs-shell]');
