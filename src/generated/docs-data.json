@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T15:11:35.728Z",
+  "updatedAt": "2026-09-14T09:07:18.632Z",
   "portalPages": [
     {
       "kind": "portal",
@@ -1687,6 +1687,1353 @@
         "reference",
         "skills"
       ]
+    },
+    {
+      "id": "azure-knowledge",
+      "name": "Azure Knowledge",
+      "category": "Learning",
+      "description": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "pages": [
+        {
+          "title": "Azure Compute",
+          "href": "/docs/sources/azure-knowledge/services/compute/",
+          "section": "services",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "Decision tree: Which compute service?",
+              "slug": "decision-tree-which-compute-service"
+            },
+            {
+              "depth": 2,
+              "text": "Services",
+              "slug": "services"
+            },
+            {
+              "depth": 2,
+              "text": "Service deep dives",
+              "slug": "service-deep-dives"
+            }
+          ],
+          "relativePath": "services/compute/README.md"
+        },
+        {
+          "title": "Azure Services Deep Dives",
+          "href": "/docs/sources/azure-knowledge/services/",
+          "section": "services",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "Categories",
+              "slug": "categories"
+            }
+          ],
+          "relativePath": "services/README.md"
+        },
+        {
+          "title": "System Design Glossary — Azure Edition",
+          "href": "/docs/sources/azure-knowledge/glossary/",
+          "section": "glossary",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "A",
+              "slug": "a"
+            },
+            {
+              "depth": 3,
+              "text": "Active-Active",
+              "slug": "active-active"
+            },
+            {
+              "depth": 3,
+              "text": "Active-Passive (Active-Standby)",
+              "slug": "active-passive-active-standby"
+            },
+            {
+              "depth": 3,
+              "text": "Anti-Corruption Layer",
+              "slug": "anti-corruption-layer"
+            },
+            {
+              "depth": 3,
+              "text": "AP (Availability + Partition Tolerance)",
+              "slug": "ap-availability-partition-tolerance"
+            },
+            {
+              "depth": 3,
+              "text": "Auto-scaling",
+              "slug": "auto-scaling"
+            },
+            {
+              "depth": 3,
+              "text": "Availability (System Design)",
+              "slug": "availability-system-design"
+            },
+            {
+              "depth": 3,
+              "text": "Availability Set",
+              "slug": "availability-set"
+            },
+            {
+              "depth": 3,
+              "text": "Availability Zone",
+              "slug": "availability-zone"
+            },
+            {
+              "depth": 2,
+              "text": "B",
+              "slug": "b"
+            },
+            {
+              "depth": 3,
+              "text": "Backpressure",
+              "slug": "backpressure"
+            },
+            {
+              "depth": 3,
+              "text": "Bastion Host",
+              "slug": "bastion-host"
+            },
+            {
+              "depth": 3,
+              "text": "Blue-Green Deployment",
+              "slug": "blue-green-deployment"
+            },
+            {
+              "depth": 3,
+              "text": "Bounded Context",
+              "slug": "bounded-context"
+            },
+            {
+              "depth": 3,
+              "text": "Bulkhead Pattern",
+              "slug": "bulkhead-pattern"
+            },
+            {
+              "depth": 2,
+              "text": "C",
+              "slug": "c"
+            },
+            {
+              "depth": 3,
+              "text": "Cache-Aside",
+              "slug": "cache-aside"
+            },
+            {
+              "depth": 3,
+              "text": "CAP Theorem",
+              "slug": "cap-theorem"
+            },
+            {
+              "depth": 3,
+              "text": "CQRS (Command Query Responsibility Segregation)",
+              "slug": "cqrs-command-query-responsibility-segregation"
+            },
+            {
+              "depth": 3,
+              "text": "Circuit Breaker",
+              "slug": "circuit-breaker"
+            },
+            {
+              "depth": 3,
+              "text": "Claim Check",
+              "slug": "claim-check"
+            },
+            {
+              "depth": 3,
+              "text": "Consistency (System Design)",
+              "slug": "consistency-system-design"
+            },
+            {
+              "depth": 3,
+              "text": "Container Orchestration",
+              "slug": "container-orchestration"
+            },
+            {
+              "depth": 3,
+              "text": "Content Delivery Network (CDN)",
+              "slug": "content-delivery-network-cdn"
+            },
+            {
+              "depth": 3,
+              "text": "Correlation ID",
+              "slug": "correlation-id"
+            },
+            {
+              "depth": 2,
+              "text": "D",
+              "slug": "d"
+            },
+            {
+              "depth": 3,
+              "text": "Database Migration",
+              "slug": "database-migration"
+            },
+            {
+              "depth": 3,
+              "text": "Data Lake",
+              "slug": "data-lake"
+            },
+            {
+              "depth": 3,
+              "text": "Dead Letter Queue",
+              "slug": "dead-letter-queue"
+            },
+            {
+              "depth": 3,
+              "text": "Delegation of Trust",
+              "slug": "delegation-of-trust"
+            },
+            {
+              "depth": 3,
+              "text": "Distributed Tracing",
+              "slug": "distributed-tracing"
+            },
+            {
+              "depth": 2,
+              "text": "E",
+              "slug": "e"
+            },
+            {
+              "depth": 3,
+              "text": "Event Sourcing",
+              "slug": "event-sourcing"
+            },
+            {
+              "depth": 3,
+              "text": "Eventually Consistent",
+              "slug": "eventually-consistent"
+            },
+            {
+              "depth": 3,
+              "text": "ExpressRoute",
+              "slug": "expressroute"
+            },
+            {
+              "depth": 2,
+              "text": "F",
+              "slug": "f"
+            },
+            {
+              "depth": 3,
+              "text": "Failover",
+              "slug": "failover"
+            },
+            {
+              "depth": 3,
+              "text": "Fan-Out / Fan-In",
+              "slug": "fan-out-fan-in"
+            },
+            {
+              "depth": 3,
+              "text": "Fault Domain",
+              "slug": "fault-domain"
+            },
+            {
+              "depth": 3,
+              "text": "Function-as-a-Service (FaaS)",
+              "slug": "function-as-a-service-faas"
+            },
+            {
+              "depth": 2,
+              "text": "G",
+              "slug": "g"
+            },
+            {
+              "depth": 3,
+              "text": "Geo-Redundancy",
+              "slug": "geo-redundancy"
+            },
+            {
+              "depth": 3,
+              "text": "Graceful Degradation",
+              "slug": "graceful-degradation"
+            },
+            {
+              "depth": 2,
+              "text": "H",
+              "slug": "h"
+            },
+            {
+              "depth": 3,
+              "text": "Health Probe / Health Check",
+              "slug": "health-probe-health-check"
+            },
+            {
+              "depth": 3,
+              "text": "Horizontal Scaling (Scaling Out)",
+              "slug": "horizontal-scaling-scaling-out"
+            },
+            {
+              "depth": 3,
+              "text": "Hub and Spoke",
+              "slug": "hub-and-spoke"
+            },
+            {
+              "depth": 2,
+              "text": "I",
+              "slug": "i"
+            },
+            {
+              "depth": 3,
+              "text": "Idempotency",
+              "slug": "idempotency"
+            },
+            {
+              "depth": 3,
+              "text": "Idle Connection",
+              "slug": "idle-connection"
+            },
+            {
+              "depth": 3,
+              "text": "Infrastructure as Code (IaC)",
+              "slug": "infrastructure-as-code-iac"
+            },
+            {
+              "depth": 2,
+              "text": "J",
+              "slug": "j"
+            },
+            {
+              "depth": 3,
+              "text": "Just-in-Time (JIT) Access",
+              "slug": "just-in-time-jit-access"
+            },
+            {
+              "depth": 2,
+              "text": "K",
+              "slug": "k"
+            },
+            {
+              "depth": 3,
+              "text": "Key Rotation",
+              "slug": "key-rotation"
+            },
+            {
+              "depth": 3,
+              "text": "Kubernetes",
+              "slug": "kubernetes"
+            },
+            {
+              "depth": 2,
+              "text": "L",
+              "slug": "l"
+            },
+            {
+              "depth": 3,
+              "text": "Latency",
+              "slug": "latency"
+            },
+            {
+              "depth": 3,
+              "text": "Load Balancing",
+              "slug": "load-balancing"
+            },
+            {
+              "depth": 3,
+              "text": "Locks (Distributed)",
+              "slug": "locks-distributed"
+            },
+            {
+              "depth": 2,
+              "text": "M",
+              "slug": "m"
+            },
+            {
+              "depth": 3,
+              "text": "Materialized View",
+              "slug": "materialized-view"
+            },
+            {
+              "depth": 3,
+              "text": "Message Broker",
+              "slug": "message-broker"
+            },
+            {
+              "depth": 3,
+              "text": "Microservices",
+              "slug": "microservices"
+            },
+            {
+              "depth": 3,
+              "text": "Multi-tenancy",
+              "slug": "multi-tenancy"
+            },
+            {
+              "depth": 2,
+              "text": "N",
+              "slug": "n"
+            },
+            {
+              "depth": 3,
+              "text": "Namespace",
+              "slug": "namespace"
+            },
+            {
+              "depth": 3,
+              "text": "N-tier Architecture",
+              "slug": "n-tier-architecture"
+            },
+            {
+              "depth": 2,
+              "text": "O",
+              "slug": "o"
+            },
+            {
+              "depth": 3,
+              "text": "Observability",
+              "slug": "observability"
+            },
+            {
+              "depth": 3,
+              "text": "Orchestration (Microservices)",
+              "slug": "orchestration-microservices"
+            },
+            {
+              "depth": 2,
+              "text": "P",
+              "slug": "p"
+            },
+            {
+              "depth": 3,
+              "text": "Partition (Database)",
+              "slug": "partition-database"
+            },
+            {
+              "depth": 3,
+              "text": "Partition Key",
+              "slug": "partition-key"
+            },
+            {
+              "depth": 3,
+              "text": "Pattern: Ambassador",
+              "slug": "pattern-ambassador"
+            },
+            {
+              "depth": 3,
+              "text": "Pattern: Saga",
+              "slug": "pattern-saga"
+            },
+            {
+              "depth": 3,
+              "text": "Pattern: Sidecar",
+              "slug": "pattern-sidecar"
+            },
+            {
+              "depth": 3,
+              "text": "Pattern: Strangler Fig",
+              "slug": "pattern-strangler-fig"
+            },
+            {
+              "depth": 3,
+              "text": "Private Endpoint",
+              "slug": "private-endpoint"
+            },
+            {
+              "depth": 3,
+              "text": "Proximity Placement Group",
+              "slug": "proximity-placement-group"
+            },
+            {
+              "depth": 2,
+              "text": "Q",
+              "slug": "q"
+            },
+            {
+              "depth": 3,
+              "text": "Queue",
+              "slug": "queue"
+            },
+            {
+              "depth": 3,
+              "text": "Quorum",
+              "slug": "quorum"
+            },
+            {
+              "depth": 2,
+              "text": "R",
+              "slug": "r"
+            },
+            {
+              "depth": 3,
+              "text": "Rate Limiting",
+              "slug": "rate-limiting"
+            },
+            {
+              "depth": 3,
+              "text": "Read Replica",
+              "slug": "read-replica"
+            },
+            {
+              "depth": 3,
+              "text": "Retry Pattern",
+              "slug": "retry-pattern"
+            },
+            {
+              "depth": 3,
+              "text": "Reverse Proxy",
+              "slug": "reverse-proxy"
+            },
+            {
+              "depth": 3,
+              "text": "RBAC (Role-Based Access Control)",
+              "slug": "rbac-role-based-access-control"
+            },
+            {
+              "depth": 3,
+              "text": "RTO / RPO",
+              "slug": "rto-rpo"
+            },
+            {
+              "depth": 2,
+              "text": "S",
+              "slug": "s"
+            },
+            {
+              "depth": 3,
+              "text": "Saga Pattern",
+              "slug": "saga-pattern"
+            },
+            {
+              "depth": 3,
+              "text": "Scale Set",
+              "slug": "scale-set"
+            },
+            {
+              "depth": 3,
+              "text": "Service Principal",
+              "slug": "service-principal"
+            },
+            {
+              "depth": 3,
+              "text": "Sharding",
+              "slug": "sharding"
+            },
+            {
+              "depth": 3,
+              "text": "Shutdown (Graceful)",
+              "slug": "shutdown-graceful"
+            },
+            {
+              "depth": 3,
+              "text": "SLA (Service Level Agreement)",
+              "slug": "sla-service-level-agreement"
+            },
+            {
+              "depth": 3,
+              "text": "SNAT (Source Network Address Translation)",
+              "slug": "snat-source-network-address-translation"
+            },
+            {
+              "depth": 3,
+              "text": "Stateful vs Stateless",
+              "slug": "stateful-vs-stateless"
+            },
+            {
+              "depth": 3,
+              "text": "Static Web App",
+              "slug": "static-web-app"
+            },
+            {
+              "depth": 3,
+              "text": "Sticky Session (Session Affinity)",
+              "slug": "sticky-session-session-affinity"
+            },
+            {
+              "depth": 3,
+              "text": "Strangler Fig",
+              "slug": "strangler-fig"
+            },
+            {
+              "depth": 2,
+              "text": "T",
+              "slug": "t"
+            },
+            {
+              "depth": 3,
+              "text": "Throttling",
+              "slug": "throttling"
+            },
+            {
+              "depth": 3,
+              "text": "Throughput",
+              "slug": "throughput"
+            },
+            {
+              "depth": 3,
+              "text": "Timeout",
+              "slug": "timeout"
+            },
+            {
+              "depth": 3,
+              "text": "TLS/SSL Termination",
+              "slug": "tls-ssl-termination"
+            },
+            {
+              "depth": 3,
+              "text": "Traffic Manager",
+              "slug": "traffic-manager"
+            },
+            {
+              "depth": 2,
+              "text": "U",
+              "slug": "u"
+            },
+            {
+              "depth": 3,
+              "text": "Update Domain",
+              "slug": "update-domain"
+            },
+            {
+              "depth": 3,
+              "text": "Unit Testing (Cloud)",
+              "slug": "unit-testing-cloud"
+            },
+            {
+              "depth": 2,
+              "text": "V",
+              "slug": "v"
+            },
+            {
+              "depth": 3,
+              "text": "Vertical Scaling (Scaling Up)",
+              "slug": "vertical-scaling-scaling-up"
+            },
+            {
+              "depth": 3,
+              "text": "Virtual Network (VNet)",
+              "slug": "virtual-network-vnet"
+            },
+            {
+              "depth": 3,
+              "text": "Virtual WAN",
+              "slug": "virtual-wan"
+            },
+            {
+              "depth": 2,
+              "text": "W",
+              "slug": "w"
+            },
+            {
+              "depth": 3,
+              "text": "Web Application Firewall (WAF)",
+              "slug": "web-application-firewall-waf"
+            },
+            {
+              "depth": 3,
+              "text": "Well-Architected Framework",
+              "slug": "well-architected-framework"
+            },
+            {
+              "depth": 3,
+              "text": "Workload",
+              "slug": "workload"
+            },
+            {
+              "depth": 2,
+              "text": "Z",
+              "slug": "z"
+            },
+            {
+              "depth": 3,
+              "text": "Zero Trust",
+              "slug": "zero-trust"
+            },
+            {
+              "depth": 3,
+              "text": "Zone-Redundant",
+              "slug": "zone-redundant"
+            },
+            {
+              "depth": 2,
+              "text": "Contribution",
+              "slug": "contribution"
+            }
+          ],
+          "relativePath": "glossary/README.md"
+        },
+        {
+          "title": "Core Azure Concepts",
+          "href": "/docs/sources/azure-knowledge/concepts/",
+          "section": "concepts",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "Topics",
+              "slug": "topics"
+            },
+            {
+              "depth": 2,
+              "text": "Quick reference",
+              "slug": "quick-reference"
+            }
+          ],
+          "relativePath": "concepts/README.md"
+        },
+        {
+          "title": "Azure Architecture Patterns",
+          "href": "/docs/sources/azure-knowledge/architecture/",
+          "section": "architecture",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "Contents",
+              "slug": "contents"
+            },
+            {
+              "depth": 2,
+              "text": "Architecture decision records (ADRs)",
+              "slug": "architecture-decision-records-adrs"
+            }
+          ],
+          "relativePath": "architecture/README.md"
+        },
+        {
+          "title": "Azure Knowledge Base",
+          "href": "/docs/sources/azure-knowledge/",
+          "section": "overview",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "How to navigate",
+              "slug": "how-to-navigate"
+            },
+            {
+              "depth": 2,
+              "text": "Learning paths",
+              "slug": "learning-paths"
+            },
+            {
+              "depth": 2,
+              "text": "Service categories",
+              "slug": "service-categories"
+            }
+          ],
+          "relativePath": "README.md"
+        },
+        {
+          "title": "Azure Well-Architected Framework",
+          "href": "/docs/sources/azure-knowledge/concepts/azure-well-architected/",
+          "section": "concepts",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "Overview",
+              "slug": "overview"
+            },
+            {
+              "depth": 2,
+              "text": "The five pillars",
+              "slug": "the-five-pillars"
+            },
+            {
+              "depth": 3,
+              "text": "1. Reliability",
+              "slug": "1-reliability"
+            },
+            {
+              "depth": 3,
+              "text": "2. Security",
+              "slug": "2-security"
+            },
+            {
+              "depth": 3,
+              "text": "3. Cost Optimization",
+              "slug": "3-cost-optimization"
+            },
+            {
+              "depth": 3,
+              "text": "4. Operational Excellence",
+              "slug": "4-operational-excellence"
+            },
+            {
+              "depth": 3,
+              "text": "5. Performance Efficiency",
+              "slug": "5-performance-efficiency"
+            },
+            {
+              "depth": 2,
+              "text": "Azure Well-Architected Review",
+              "slug": "azure-well-architected-review"
+            },
+            {
+              "depth": 2,
+              "text": "Related terms",
+              "slug": "related-terms"
+            }
+          ],
+          "relativePath": "concepts/azure-well-architected.md"
+        },
+        {
+          "title": "Azure Regions and Availability Zones",
+          "href": "/docs/sources/azure-knowledge/concepts/regions-and-azs/",
+          "section": "concepts",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "What it is",
+              "slug": "what-it-is"
+            },
+            {
+              "depth": 2,
+              "text": "Key facts",
+              "slug": "key-facts"
+            },
+            {
+              "depth": 2,
+              "text": "Service categories by availability",
+              "slug": "service-categories-by-availability"
+            },
+            {
+              "depth": 2,
+              "text": "Diagram: Multi-region active-active architecture",
+              "slug": "diagram-multi-region-active-active-architecture"
+            },
+            {
+              "depth": 2,
+              "text": "Choosing regions",
+              "slug": "choosing-regions"
+            },
+            {
+              "depth": 2,
+              "text": "Related terms",
+              "slug": "related-terms"
+            }
+          ],
+          "relativePath": "concepts/regions-and-azs.md"
+        },
+        {
+          "title": "Deployment Guide: Extract Text from Objects",
+          "href": "/docs/sources/azure-knowledge/architecture/extract-object-text-deployment/",
+          "section": "architecture",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "Table of Contents",
+              "slug": "table-of-contents"
+            },
+            {
+              "depth": 2,
+              "text": "Resource Provisioning",
+              "slug": "resource-provisioning"
+            },
+            {
+              "depth": 3,
+              "text": "Azure Resources (Bicep)",
+              "slug": "azure-resources-bicep"
+            },
+            {
+              "depth": 3,
+              "text": "Deploy with Azure CLI",
+              "slug": "deploy-with-azure-cli"
+            },
+            {
+              "depth": 2,
+              "text": "Azure Function Deployment",
+              "slug": "azure-function-deployment"
+            },
+            {
+              "depth": 3,
+              "text": "Local Setup",
+              "slug": "local-setup"
+            },
+            {
+              "depth": 3,
+              "text": "Test Locally",
+              "slug": "test-locally"
+            },
+            {
+              "depth": 3,
+              "text": "Publish to Azure",
+              "slug": "publish-to-azure"
+            },
+            {
+              "depth": 2,
+              "text": "AI Builder Model Training",
+              "slug": "ai-builder-model-training"
+            },
+            {
+              "depth": 3,
+              "text": "Data Preparation",
+              "slug": "data-preparation"
+            },
+            {
+              "depth": 3,
+              "text": "Training Steps",
+              "slug": "training-steps"
+            },
+            {
+              "depth": 3,
+              "text": "Testing the Model",
+              "slug": "testing-the-model"
+            },
+            {
+              "depth": 2,
+              "text": "Power Automate Flow Configuration",
+              "slug": "power-automate-flow-configuration"
+            },
+            {
+              "depth": 3,
+              "text": "Flow Overview",
+              "slug": "flow-overview"
+            },
+            {
+              "depth": 3,
+              "text": "Detailed Action Configuration",
+              "slug": "detailed-action-configuration"
+            },
+            {
+              "depth": 2,
+              "text": "SharePoint Configuration",
+              "slug": "sharepoint-configuration"
+            },
+            {
+              "depth": 3,
+              "text": "Create Metadata Columns",
+              "slug": "create-metadata-columns"
+            },
+            {
+              "depth": 3,
+              "text": "Enable Metadata for Search",
+              "slug": "enable-metadata-for-search"
+            },
+            {
+              "depth": 2,
+              "text": "PnP Modern Search Setup",
+              "slug": "pnp-modern-search-setup"
+            },
+            {
+              "depth": 3,
+              "text": "Installation",
+              "slug": "installation"
+            },
+            {
+              "depth": 3,
+              "text": "Configuration",
+              "slug": "configuration"
+            },
+            {
+              "depth": 2,
+              "text": "Validation",
+              "slug": "validation"
+            },
+            {
+              "depth": 3,
+              "text": "Test Matrix",
+              "slug": "test-matrix"
+            },
+            {
+              "depth": 3,
+              "text": "Validation Script",
+              "slug": "validation-script"
+            },
+            {
+              "depth": 2,
+              "text": "Runbook",
+              "slug": "runbook"
+            },
+            {
+              "depth": 3,
+              "text": "Daily Operations",
+              "slug": "daily-operations"
+            },
+            {
+              "depth": 3,
+              "text": "Incident Response",
+              "slug": "incident-response"
+            },
+            {
+              "depth": 3,
+              "text": "Monthly Maintenance",
+              "slug": "monthly-maintenance"
+            },
+            {
+              "depth": 3,
+              "text": "Quarterly",
+              "slug": "quarterly"
+            },
+            {
+              "depth": 2,
+              "text": "Troubleshooting",
+              "slug": "troubleshooting"
+            },
+            {
+              "depth": 3,
+              "text": "Common Issues",
+              "slug": "common-issues"
+            },
+            {
+              "depth": 3,
+              "text": "Logs and Diagnostics",
+              "slug": "logs-and-diagnostics"
+            }
+          ],
+          "relativePath": "architecture/extract-object-text-deployment.md"
+        },
+        {
+          "title": "Azure Landing Zones",
+          "href": "/docs/sources/azure-knowledge/architecture/landing-zones/",
+          "section": "architecture",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "What it is",
+              "slug": "what-it-is"
+            },
+            {
+              "depth": 2,
+              "text": "Architecture components",
+              "slug": "architecture-components"
+            },
+            {
+              "depth": 2,
+              "text": "Enterprise-scale landing zone",
+              "slug": "enterprise-scale-landing-zone"
+            },
+            {
+              "depth": 2,
+              "text": "Deployment options",
+              "slug": "deployment-options"
+            },
+            {
+              "depth": 2,
+              "text": "Decision: Hub-spoke vs. Virtual WAN",
+              "slug": "decision-hub-spoke-vs-virtual-wan"
+            },
+            {
+              "depth": 2,
+              "text": "Related terms",
+              "slug": "related-terms"
+            }
+          ],
+          "relativePath": "architecture/landing-zones.md"
+        },
+        {
+          "title": "Extract Text from Objects Using AI Builder and Document Intelligence",
+          "href": "/docs/sources/azure-knowledge/services/ai-ml/extract-object-text/",
+          "section": "services",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "Table of Contents",
+              "slug": "table-of-contents"
+            },
+            {
+              "depth": 2,
+              "text": "Overview",
+              "slug": "overview"
+            },
+            {
+              "depth": 3,
+              "text": "Problem",
+              "slug": "problem"
+            },
+            {
+              "depth": 3,
+              "text": "Solution",
+              "slug": "solution"
+            },
+            {
+              "depth": 3,
+              "text": "Use Cases",
+              "slug": "use-cases"
+            },
+            {
+              "depth": 2,
+              "text": "Architecture",
+              "slug": "architecture"
+            },
+            {
+              "depth": 3,
+              "text": "Data Flow",
+              "slug": "data-flow"
+            },
+            {
+              "depth": 2,
+              "text": "Visual Flow Diagram",
+              "slug": "visual-flow-diagram"
+            },
+            {
+              "depth": 3,
+              "text": "High-Level Process",
+              "slug": "high-level-process"
+            },
+            {
+              "depth": 3,
+              "text": "Geometry Intersection Logic",
+              "slug": "geometry-intersection-logic"
+            },
+            {
+              "depth": 3,
+              "text": "Intersection Test (Visual)",
+              "slug": "intersection-test-visual"
+            },
+            {
+              "depth": 2,
+              "text": "Component Breakdown",
+              "slug": "component-breakdown"
+            },
+            {
+              "depth": 3,
+              "text": "Microsoft Power Platform",
+              "slug": "microsoft-power-platform"
+            },
+            {
+              "depth": 3,
+              "text": "Azure",
+              "slug": "azure"
+            },
+            {
+              "depth": 3,
+              "text": "Microsoft 365",
+              "slug": "microsoft-365"
+            },
+            {
+              "depth": 2,
+              "text": "Prerequisites",
+              "slug": "prerequisites"
+            },
+            {
+              "depth": 3,
+              "text": "Azure Subscription",
+              "slug": "azure-subscription"
+            },
+            {
+              "depth": 3,
+              "text": "Power Platform",
+              "slug": "power-platform"
+            },
+            {
+              "depth": 3,
+              "text": "Microsoft 365",
+              "slug": "microsoft-365"
+            },
+            {
+              "depth": 3,
+              "text": "Development Tools",
+              "slug": "development-tools"
+            },
+            {
+              "depth": 2,
+              "text": "Step-by-Step Implementation",
+              "slug": "step-by-step-implementation"
+            },
+            {
+              "depth": 3,
+              "text": "Step 1: Train the AI Builder Object Detection Model",
+              "slug": "step-1-train-the-ai-builder-object-detection-model"
+            },
+            {
+              "depth": 3,
+              "text": "Step 2: Create the Azure Document Intelligence Resource",
+              "slug": "step-2-create-the-azure-document-intelligence-resource"
+            },
+            {
+              "depth": 3,
+              "text": "Step 3: Deploy the Geometry-Matching Azure Function",
+              "slug": "step-3-deploy-the-geometry-matching-azure-function"
+            },
+            {
+              "depth": 3,
+              "text": "Step 4: Build the Power Automate Flow",
+              "slug": "step-4-build-the-power-automate-flow"
+            },
+            {
+              "depth": 3,
+              "text": "Step 5: Configure SharePoint Metadata Columns",
+              "slug": "step-5-configure-sharepoint-metadata-columns"
+            },
+            {
+              "depth": 3,
+              "text": "Step 6: Configure PnP Modern Search Web Parts",
+              "slug": "step-6-configure-pnp-modern-search-web-parts"
+            },
+            {
+              "depth": 2,
+              "text": "Code: Azure Function for Geometry Matching",
+              "slug": "code-azure-function-for-geometry-matching"
+            },
+            {
+              "depth": 3,
+              "text": "Node.js (TypeScript) Implementation",
+              "slug": "node-js-typescript-implementation"
+            },
+            {
+              "depth": 3,
+              "text": "package.json",
+              "slug": "package-json"
+            },
+            {
+              "depth": 3,
+              "text": "tsconfig.json",
+              "slug": "tsconfig-json"
+            },
+            {
+              "depth": 3,
+              "text": "Unit Tests",
+              "slug": "unit-tests"
+            },
+            {
+              "depth": 2,
+              "text": "Deployment Guide",
+              "slug": "deployment-guide"
+            },
+            {
+              "depth": 3,
+              "text": "Deployment Architecture",
+              "slug": "deployment-architecture"
+            },
+            {
+              "depth": 3,
+              "text": "Prerequisites Checklist",
+              "slug": "prerequisites-checklist"
+            },
+            {
+              "depth": 3,
+              "text": "Azure Resource Deployment",
+              "slug": "azure-resource-deployment"
+            },
+            {
+              "depth": 3,
+              "text": "CI/CD Pipeline (GitHub Actions)",
+              "slug": "ci-cd-pipeline-github-actions"
+            },
+            {
+              "depth": 3,
+              "text": "Power Platform ALM",
+              "slug": "power-platform-alm"
+            },
+            {
+              "depth": 3,
+              "text": "Post-Deployment Validation",
+              "slug": "post-deployment-validation"
+            },
+            {
+              "depth": 2,
+              "text": "Well-Architected Considerations",
+              "slug": "well-architected-considerations"
+            },
+            {
+              "depth": 3,
+              "text": "Reliability",
+              "slug": "reliability"
+            },
+            {
+              "depth": 3,
+              "text": "Security",
+              "slug": "security"
+            },
+            {
+              "depth": 3,
+              "text": "Cost Optimization",
+              "slug": "cost-optimization"
+            },
+            {
+              "depth": 3,
+              "text": "Performance Efficiency",
+              "slug": "performance-efficiency"
+            },
+            {
+              "depth": 3,
+              "text": "Operational Excellence",
+              "slug": "operational-excellence"
+            },
+            {
+              "depth": 2,
+              "text": "Cost Estimation",
+              "slug": "cost-estimation"
+            },
+            {
+              "depth": 3,
+              "text": "Azure Services (per month)",
+              "slug": "azure-services-per-month"
+            },
+            {
+              "depth": 3,
+              "text": "Power Platform",
+              "slug": "power-platform"
+            },
+            {
+              "depth": 2,
+              "text": "Alternatives",
+              "slug": "alternatives"
+            },
+            {
+              "depth": 2,
+              "text": "Next Steps",
+              "slug": "next-steps"
+            },
+            {
+              "depth": 3,
+              "text": "Additional Resources",
+              "slug": "additional-resources"
+            }
+          ],
+          "relativePath": "services/ai-ml/extract-object-text.md"
+        },
+        {
+          "title": "Azure Virtual Machines",
+          "href": "/docs/sources/azure-knowledge/services/compute/virtual-machines/",
+          "section": "services",
+          "headings": [
+            {
+              "depth": 2,
+              "text": "What it is",
+              "slug": "what-it-is"
+            },
+            {
+              "depth": 2,
+              "text": "How it works",
+              "slug": "how-it-works"
+            },
+            {
+              "depth": 2,
+              "text": "Key concepts",
+              "slug": "key-concepts"
+            },
+            {
+              "depth": 2,
+              "text": "VM series cheat sheet",
+              "slug": "vm-series-cheat-sheet"
+            },
+            {
+              "depth": 2,
+              "text": "Step-by-step: Create a VM",
+              "slug": "step-by-step-create-a-vm"
+            },
+            {
+              "depth": 2,
+              "text": "SLA and cost",
+              "slug": "sla-and-cost"
+            },
+            {
+              "depth": 2,
+              "text": "Related terms",
+              "slug": "related-terms"
+            }
+          ],
+          "relativePath": "services/compute/virtual-machines.md"
+        }
+      ],
+      "navigation": [
+        "concepts",
+        "architecture",
+        "guides",
+        "services",
+        "glossary"
+      ]
     }
   ],
   "categories": [
@@ -3162,6 +4509,1358 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Learning",
+      "sources": [
+        {
+          "id": "azure-knowledge",
+          "name": "Azure Knowledge",
+          "category": "Learning",
+          "description": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+          "repo": "MSP-learn/azure-knowledge",
+          "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+          "defaultBranch": "main",
+          "docsPath": "docs",
+          "tags": [
+            "azure",
+            "cloud",
+            "architecture",
+            "system-design",
+            "learning"
+          ],
+          "pages": [
+            {
+              "title": "Azure Compute",
+              "href": "/docs/sources/azure-knowledge/services/compute/",
+              "section": "services",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "Decision tree: Which compute service?",
+                  "slug": "decision-tree-which-compute-service"
+                },
+                {
+                  "depth": 2,
+                  "text": "Services",
+                  "slug": "services"
+                },
+                {
+                  "depth": 2,
+                  "text": "Service deep dives",
+                  "slug": "service-deep-dives"
+                }
+              ],
+              "relativePath": "services/compute/README.md"
+            },
+            {
+              "title": "Azure Services Deep Dives",
+              "href": "/docs/sources/azure-knowledge/services/",
+              "section": "services",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "Categories",
+                  "slug": "categories"
+                }
+              ],
+              "relativePath": "services/README.md"
+            },
+            {
+              "title": "System Design Glossary — Azure Edition",
+              "href": "/docs/sources/azure-knowledge/glossary/",
+              "section": "glossary",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "A",
+                  "slug": "a"
+                },
+                {
+                  "depth": 3,
+                  "text": "Active-Active",
+                  "slug": "active-active"
+                },
+                {
+                  "depth": 3,
+                  "text": "Active-Passive (Active-Standby)",
+                  "slug": "active-passive-active-standby"
+                },
+                {
+                  "depth": 3,
+                  "text": "Anti-Corruption Layer",
+                  "slug": "anti-corruption-layer"
+                },
+                {
+                  "depth": 3,
+                  "text": "AP (Availability + Partition Tolerance)",
+                  "slug": "ap-availability-partition-tolerance"
+                },
+                {
+                  "depth": 3,
+                  "text": "Auto-scaling",
+                  "slug": "auto-scaling"
+                },
+                {
+                  "depth": 3,
+                  "text": "Availability (System Design)",
+                  "slug": "availability-system-design"
+                },
+                {
+                  "depth": 3,
+                  "text": "Availability Set",
+                  "slug": "availability-set"
+                },
+                {
+                  "depth": 3,
+                  "text": "Availability Zone",
+                  "slug": "availability-zone"
+                },
+                {
+                  "depth": 2,
+                  "text": "B",
+                  "slug": "b"
+                },
+                {
+                  "depth": 3,
+                  "text": "Backpressure",
+                  "slug": "backpressure"
+                },
+                {
+                  "depth": 3,
+                  "text": "Bastion Host",
+                  "slug": "bastion-host"
+                },
+                {
+                  "depth": 3,
+                  "text": "Blue-Green Deployment",
+                  "slug": "blue-green-deployment"
+                },
+                {
+                  "depth": 3,
+                  "text": "Bounded Context",
+                  "slug": "bounded-context"
+                },
+                {
+                  "depth": 3,
+                  "text": "Bulkhead Pattern",
+                  "slug": "bulkhead-pattern"
+                },
+                {
+                  "depth": 2,
+                  "text": "C",
+                  "slug": "c"
+                },
+                {
+                  "depth": 3,
+                  "text": "Cache-Aside",
+                  "slug": "cache-aside"
+                },
+                {
+                  "depth": 3,
+                  "text": "CAP Theorem",
+                  "slug": "cap-theorem"
+                },
+                {
+                  "depth": 3,
+                  "text": "CQRS (Command Query Responsibility Segregation)",
+                  "slug": "cqrs-command-query-responsibility-segregation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Circuit Breaker",
+                  "slug": "circuit-breaker"
+                },
+                {
+                  "depth": 3,
+                  "text": "Claim Check",
+                  "slug": "claim-check"
+                },
+                {
+                  "depth": 3,
+                  "text": "Consistency (System Design)",
+                  "slug": "consistency-system-design"
+                },
+                {
+                  "depth": 3,
+                  "text": "Container Orchestration",
+                  "slug": "container-orchestration"
+                },
+                {
+                  "depth": 3,
+                  "text": "Content Delivery Network (CDN)",
+                  "slug": "content-delivery-network-cdn"
+                },
+                {
+                  "depth": 3,
+                  "text": "Correlation ID",
+                  "slug": "correlation-id"
+                },
+                {
+                  "depth": 2,
+                  "text": "D",
+                  "slug": "d"
+                },
+                {
+                  "depth": 3,
+                  "text": "Database Migration",
+                  "slug": "database-migration"
+                },
+                {
+                  "depth": 3,
+                  "text": "Data Lake",
+                  "slug": "data-lake"
+                },
+                {
+                  "depth": 3,
+                  "text": "Dead Letter Queue",
+                  "slug": "dead-letter-queue"
+                },
+                {
+                  "depth": 3,
+                  "text": "Delegation of Trust",
+                  "slug": "delegation-of-trust"
+                },
+                {
+                  "depth": 3,
+                  "text": "Distributed Tracing",
+                  "slug": "distributed-tracing"
+                },
+                {
+                  "depth": 2,
+                  "text": "E",
+                  "slug": "e"
+                },
+                {
+                  "depth": 3,
+                  "text": "Event Sourcing",
+                  "slug": "event-sourcing"
+                },
+                {
+                  "depth": 3,
+                  "text": "Eventually Consistent",
+                  "slug": "eventually-consistent"
+                },
+                {
+                  "depth": 3,
+                  "text": "ExpressRoute",
+                  "slug": "expressroute"
+                },
+                {
+                  "depth": 2,
+                  "text": "F",
+                  "slug": "f"
+                },
+                {
+                  "depth": 3,
+                  "text": "Failover",
+                  "slug": "failover"
+                },
+                {
+                  "depth": 3,
+                  "text": "Fan-Out / Fan-In",
+                  "slug": "fan-out-fan-in"
+                },
+                {
+                  "depth": 3,
+                  "text": "Fault Domain",
+                  "slug": "fault-domain"
+                },
+                {
+                  "depth": 3,
+                  "text": "Function-as-a-Service (FaaS)",
+                  "slug": "function-as-a-service-faas"
+                },
+                {
+                  "depth": 2,
+                  "text": "G",
+                  "slug": "g"
+                },
+                {
+                  "depth": 3,
+                  "text": "Geo-Redundancy",
+                  "slug": "geo-redundancy"
+                },
+                {
+                  "depth": 3,
+                  "text": "Graceful Degradation",
+                  "slug": "graceful-degradation"
+                },
+                {
+                  "depth": 2,
+                  "text": "H",
+                  "slug": "h"
+                },
+                {
+                  "depth": 3,
+                  "text": "Health Probe / Health Check",
+                  "slug": "health-probe-health-check"
+                },
+                {
+                  "depth": 3,
+                  "text": "Horizontal Scaling (Scaling Out)",
+                  "slug": "horizontal-scaling-scaling-out"
+                },
+                {
+                  "depth": 3,
+                  "text": "Hub and Spoke",
+                  "slug": "hub-and-spoke"
+                },
+                {
+                  "depth": 2,
+                  "text": "I",
+                  "slug": "i"
+                },
+                {
+                  "depth": 3,
+                  "text": "Idempotency",
+                  "slug": "idempotency"
+                },
+                {
+                  "depth": 3,
+                  "text": "Idle Connection",
+                  "slug": "idle-connection"
+                },
+                {
+                  "depth": 3,
+                  "text": "Infrastructure as Code (IaC)",
+                  "slug": "infrastructure-as-code-iac"
+                },
+                {
+                  "depth": 2,
+                  "text": "J",
+                  "slug": "j"
+                },
+                {
+                  "depth": 3,
+                  "text": "Just-in-Time (JIT) Access",
+                  "slug": "just-in-time-jit-access"
+                },
+                {
+                  "depth": 2,
+                  "text": "K",
+                  "slug": "k"
+                },
+                {
+                  "depth": 3,
+                  "text": "Key Rotation",
+                  "slug": "key-rotation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Kubernetes",
+                  "slug": "kubernetes"
+                },
+                {
+                  "depth": 2,
+                  "text": "L",
+                  "slug": "l"
+                },
+                {
+                  "depth": 3,
+                  "text": "Latency",
+                  "slug": "latency"
+                },
+                {
+                  "depth": 3,
+                  "text": "Load Balancing",
+                  "slug": "load-balancing"
+                },
+                {
+                  "depth": 3,
+                  "text": "Locks (Distributed)",
+                  "slug": "locks-distributed"
+                },
+                {
+                  "depth": 2,
+                  "text": "M",
+                  "slug": "m"
+                },
+                {
+                  "depth": 3,
+                  "text": "Materialized View",
+                  "slug": "materialized-view"
+                },
+                {
+                  "depth": 3,
+                  "text": "Message Broker",
+                  "slug": "message-broker"
+                },
+                {
+                  "depth": 3,
+                  "text": "Microservices",
+                  "slug": "microservices"
+                },
+                {
+                  "depth": 3,
+                  "text": "Multi-tenancy",
+                  "slug": "multi-tenancy"
+                },
+                {
+                  "depth": 2,
+                  "text": "N",
+                  "slug": "n"
+                },
+                {
+                  "depth": 3,
+                  "text": "Namespace",
+                  "slug": "namespace"
+                },
+                {
+                  "depth": 3,
+                  "text": "N-tier Architecture",
+                  "slug": "n-tier-architecture"
+                },
+                {
+                  "depth": 2,
+                  "text": "O",
+                  "slug": "o"
+                },
+                {
+                  "depth": 3,
+                  "text": "Observability",
+                  "slug": "observability"
+                },
+                {
+                  "depth": 3,
+                  "text": "Orchestration (Microservices)",
+                  "slug": "orchestration-microservices"
+                },
+                {
+                  "depth": 2,
+                  "text": "P",
+                  "slug": "p"
+                },
+                {
+                  "depth": 3,
+                  "text": "Partition (Database)",
+                  "slug": "partition-database"
+                },
+                {
+                  "depth": 3,
+                  "text": "Partition Key",
+                  "slug": "partition-key"
+                },
+                {
+                  "depth": 3,
+                  "text": "Pattern: Ambassador",
+                  "slug": "pattern-ambassador"
+                },
+                {
+                  "depth": 3,
+                  "text": "Pattern: Saga",
+                  "slug": "pattern-saga"
+                },
+                {
+                  "depth": 3,
+                  "text": "Pattern: Sidecar",
+                  "slug": "pattern-sidecar"
+                },
+                {
+                  "depth": 3,
+                  "text": "Pattern: Strangler Fig",
+                  "slug": "pattern-strangler-fig"
+                },
+                {
+                  "depth": 3,
+                  "text": "Private Endpoint",
+                  "slug": "private-endpoint"
+                },
+                {
+                  "depth": 3,
+                  "text": "Proximity Placement Group",
+                  "slug": "proximity-placement-group"
+                },
+                {
+                  "depth": 2,
+                  "text": "Q",
+                  "slug": "q"
+                },
+                {
+                  "depth": 3,
+                  "text": "Queue",
+                  "slug": "queue"
+                },
+                {
+                  "depth": 3,
+                  "text": "Quorum",
+                  "slug": "quorum"
+                },
+                {
+                  "depth": 2,
+                  "text": "R",
+                  "slug": "r"
+                },
+                {
+                  "depth": 3,
+                  "text": "Rate Limiting",
+                  "slug": "rate-limiting"
+                },
+                {
+                  "depth": 3,
+                  "text": "Read Replica",
+                  "slug": "read-replica"
+                },
+                {
+                  "depth": 3,
+                  "text": "Retry Pattern",
+                  "slug": "retry-pattern"
+                },
+                {
+                  "depth": 3,
+                  "text": "Reverse Proxy",
+                  "slug": "reverse-proxy"
+                },
+                {
+                  "depth": 3,
+                  "text": "RBAC (Role-Based Access Control)",
+                  "slug": "rbac-role-based-access-control"
+                },
+                {
+                  "depth": 3,
+                  "text": "RTO / RPO",
+                  "slug": "rto-rpo"
+                },
+                {
+                  "depth": 2,
+                  "text": "S",
+                  "slug": "s"
+                },
+                {
+                  "depth": 3,
+                  "text": "Saga Pattern",
+                  "slug": "saga-pattern"
+                },
+                {
+                  "depth": 3,
+                  "text": "Scale Set",
+                  "slug": "scale-set"
+                },
+                {
+                  "depth": 3,
+                  "text": "Service Principal",
+                  "slug": "service-principal"
+                },
+                {
+                  "depth": 3,
+                  "text": "Sharding",
+                  "slug": "sharding"
+                },
+                {
+                  "depth": 3,
+                  "text": "Shutdown (Graceful)",
+                  "slug": "shutdown-graceful"
+                },
+                {
+                  "depth": 3,
+                  "text": "SLA (Service Level Agreement)",
+                  "slug": "sla-service-level-agreement"
+                },
+                {
+                  "depth": 3,
+                  "text": "SNAT (Source Network Address Translation)",
+                  "slug": "snat-source-network-address-translation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Stateful vs Stateless",
+                  "slug": "stateful-vs-stateless"
+                },
+                {
+                  "depth": 3,
+                  "text": "Static Web App",
+                  "slug": "static-web-app"
+                },
+                {
+                  "depth": 3,
+                  "text": "Sticky Session (Session Affinity)",
+                  "slug": "sticky-session-session-affinity"
+                },
+                {
+                  "depth": 3,
+                  "text": "Strangler Fig",
+                  "slug": "strangler-fig"
+                },
+                {
+                  "depth": 2,
+                  "text": "T",
+                  "slug": "t"
+                },
+                {
+                  "depth": 3,
+                  "text": "Throttling",
+                  "slug": "throttling"
+                },
+                {
+                  "depth": 3,
+                  "text": "Throughput",
+                  "slug": "throughput"
+                },
+                {
+                  "depth": 3,
+                  "text": "Timeout",
+                  "slug": "timeout"
+                },
+                {
+                  "depth": 3,
+                  "text": "TLS/SSL Termination",
+                  "slug": "tls-ssl-termination"
+                },
+                {
+                  "depth": 3,
+                  "text": "Traffic Manager",
+                  "slug": "traffic-manager"
+                },
+                {
+                  "depth": 2,
+                  "text": "U",
+                  "slug": "u"
+                },
+                {
+                  "depth": 3,
+                  "text": "Update Domain",
+                  "slug": "update-domain"
+                },
+                {
+                  "depth": 3,
+                  "text": "Unit Testing (Cloud)",
+                  "slug": "unit-testing-cloud"
+                },
+                {
+                  "depth": 2,
+                  "text": "V",
+                  "slug": "v"
+                },
+                {
+                  "depth": 3,
+                  "text": "Vertical Scaling (Scaling Up)",
+                  "slug": "vertical-scaling-scaling-up"
+                },
+                {
+                  "depth": 3,
+                  "text": "Virtual Network (VNet)",
+                  "slug": "virtual-network-vnet"
+                },
+                {
+                  "depth": 3,
+                  "text": "Virtual WAN",
+                  "slug": "virtual-wan"
+                },
+                {
+                  "depth": 2,
+                  "text": "W",
+                  "slug": "w"
+                },
+                {
+                  "depth": 3,
+                  "text": "Web Application Firewall (WAF)",
+                  "slug": "web-application-firewall-waf"
+                },
+                {
+                  "depth": 3,
+                  "text": "Well-Architected Framework",
+                  "slug": "well-architected-framework"
+                },
+                {
+                  "depth": 3,
+                  "text": "Workload",
+                  "slug": "workload"
+                },
+                {
+                  "depth": 2,
+                  "text": "Z",
+                  "slug": "z"
+                },
+                {
+                  "depth": 3,
+                  "text": "Zero Trust",
+                  "slug": "zero-trust"
+                },
+                {
+                  "depth": 3,
+                  "text": "Zone-Redundant",
+                  "slug": "zone-redundant"
+                },
+                {
+                  "depth": 2,
+                  "text": "Contribution",
+                  "slug": "contribution"
+                }
+              ],
+              "relativePath": "glossary/README.md"
+            },
+            {
+              "title": "Core Azure Concepts",
+              "href": "/docs/sources/azure-knowledge/concepts/",
+              "section": "concepts",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "Topics",
+                  "slug": "topics"
+                },
+                {
+                  "depth": 2,
+                  "text": "Quick reference",
+                  "slug": "quick-reference"
+                }
+              ],
+              "relativePath": "concepts/README.md"
+            },
+            {
+              "title": "Azure Architecture Patterns",
+              "href": "/docs/sources/azure-knowledge/architecture/",
+              "section": "architecture",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "Contents",
+                  "slug": "contents"
+                },
+                {
+                  "depth": 2,
+                  "text": "Architecture decision records (ADRs)",
+                  "slug": "architecture-decision-records-adrs"
+                }
+              ],
+              "relativePath": "architecture/README.md"
+            },
+            {
+              "title": "Azure Knowledge Base",
+              "href": "/docs/sources/azure-knowledge/",
+              "section": "overview",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "How to navigate",
+                  "slug": "how-to-navigate"
+                },
+                {
+                  "depth": 2,
+                  "text": "Learning paths",
+                  "slug": "learning-paths"
+                },
+                {
+                  "depth": 2,
+                  "text": "Service categories",
+                  "slug": "service-categories"
+                }
+              ],
+              "relativePath": "README.md"
+            },
+            {
+              "title": "Azure Well-Architected Framework",
+              "href": "/docs/sources/azure-knowledge/concepts/azure-well-architected/",
+              "section": "concepts",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "Overview",
+                  "slug": "overview"
+                },
+                {
+                  "depth": 2,
+                  "text": "The five pillars",
+                  "slug": "the-five-pillars"
+                },
+                {
+                  "depth": 3,
+                  "text": "1. Reliability",
+                  "slug": "1-reliability"
+                },
+                {
+                  "depth": 3,
+                  "text": "2. Security",
+                  "slug": "2-security"
+                },
+                {
+                  "depth": 3,
+                  "text": "3. Cost Optimization",
+                  "slug": "3-cost-optimization"
+                },
+                {
+                  "depth": 3,
+                  "text": "4. Operational Excellence",
+                  "slug": "4-operational-excellence"
+                },
+                {
+                  "depth": 3,
+                  "text": "5. Performance Efficiency",
+                  "slug": "5-performance-efficiency"
+                },
+                {
+                  "depth": 2,
+                  "text": "Azure Well-Architected Review",
+                  "slug": "azure-well-architected-review"
+                },
+                {
+                  "depth": 2,
+                  "text": "Related terms",
+                  "slug": "related-terms"
+                }
+              ],
+              "relativePath": "concepts/azure-well-architected.md"
+            },
+            {
+              "title": "Azure Regions and Availability Zones",
+              "href": "/docs/sources/azure-knowledge/concepts/regions-and-azs/",
+              "section": "concepts",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "What it is",
+                  "slug": "what-it-is"
+                },
+                {
+                  "depth": 2,
+                  "text": "Key facts",
+                  "slug": "key-facts"
+                },
+                {
+                  "depth": 2,
+                  "text": "Service categories by availability",
+                  "slug": "service-categories-by-availability"
+                },
+                {
+                  "depth": 2,
+                  "text": "Diagram: Multi-region active-active architecture",
+                  "slug": "diagram-multi-region-active-active-architecture"
+                },
+                {
+                  "depth": 2,
+                  "text": "Choosing regions",
+                  "slug": "choosing-regions"
+                },
+                {
+                  "depth": 2,
+                  "text": "Related terms",
+                  "slug": "related-terms"
+                }
+              ],
+              "relativePath": "concepts/regions-and-azs.md"
+            },
+            {
+              "title": "Deployment Guide: Extract Text from Objects",
+              "href": "/docs/sources/azure-knowledge/architecture/extract-object-text-deployment/",
+              "section": "architecture",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "Table of Contents",
+                  "slug": "table-of-contents"
+                },
+                {
+                  "depth": 2,
+                  "text": "Resource Provisioning",
+                  "slug": "resource-provisioning"
+                },
+                {
+                  "depth": 3,
+                  "text": "Azure Resources (Bicep)",
+                  "slug": "azure-resources-bicep"
+                },
+                {
+                  "depth": 3,
+                  "text": "Deploy with Azure CLI",
+                  "slug": "deploy-with-azure-cli"
+                },
+                {
+                  "depth": 2,
+                  "text": "Azure Function Deployment",
+                  "slug": "azure-function-deployment"
+                },
+                {
+                  "depth": 3,
+                  "text": "Local Setup",
+                  "slug": "local-setup"
+                },
+                {
+                  "depth": 3,
+                  "text": "Test Locally",
+                  "slug": "test-locally"
+                },
+                {
+                  "depth": 3,
+                  "text": "Publish to Azure",
+                  "slug": "publish-to-azure"
+                },
+                {
+                  "depth": 2,
+                  "text": "AI Builder Model Training",
+                  "slug": "ai-builder-model-training"
+                },
+                {
+                  "depth": 3,
+                  "text": "Data Preparation",
+                  "slug": "data-preparation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Training Steps",
+                  "slug": "training-steps"
+                },
+                {
+                  "depth": 3,
+                  "text": "Testing the Model",
+                  "slug": "testing-the-model"
+                },
+                {
+                  "depth": 2,
+                  "text": "Power Automate Flow Configuration",
+                  "slug": "power-automate-flow-configuration"
+                },
+                {
+                  "depth": 3,
+                  "text": "Flow Overview",
+                  "slug": "flow-overview"
+                },
+                {
+                  "depth": 3,
+                  "text": "Detailed Action Configuration",
+                  "slug": "detailed-action-configuration"
+                },
+                {
+                  "depth": 2,
+                  "text": "SharePoint Configuration",
+                  "slug": "sharepoint-configuration"
+                },
+                {
+                  "depth": 3,
+                  "text": "Create Metadata Columns",
+                  "slug": "create-metadata-columns"
+                },
+                {
+                  "depth": 3,
+                  "text": "Enable Metadata for Search",
+                  "slug": "enable-metadata-for-search"
+                },
+                {
+                  "depth": 2,
+                  "text": "PnP Modern Search Setup",
+                  "slug": "pnp-modern-search-setup"
+                },
+                {
+                  "depth": 3,
+                  "text": "Installation",
+                  "slug": "installation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Configuration",
+                  "slug": "configuration"
+                },
+                {
+                  "depth": 2,
+                  "text": "Validation",
+                  "slug": "validation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Test Matrix",
+                  "slug": "test-matrix"
+                },
+                {
+                  "depth": 3,
+                  "text": "Validation Script",
+                  "slug": "validation-script"
+                },
+                {
+                  "depth": 2,
+                  "text": "Runbook",
+                  "slug": "runbook"
+                },
+                {
+                  "depth": 3,
+                  "text": "Daily Operations",
+                  "slug": "daily-operations"
+                },
+                {
+                  "depth": 3,
+                  "text": "Incident Response",
+                  "slug": "incident-response"
+                },
+                {
+                  "depth": 3,
+                  "text": "Monthly Maintenance",
+                  "slug": "monthly-maintenance"
+                },
+                {
+                  "depth": 3,
+                  "text": "Quarterly",
+                  "slug": "quarterly"
+                },
+                {
+                  "depth": 2,
+                  "text": "Troubleshooting",
+                  "slug": "troubleshooting"
+                },
+                {
+                  "depth": 3,
+                  "text": "Common Issues",
+                  "slug": "common-issues"
+                },
+                {
+                  "depth": 3,
+                  "text": "Logs and Diagnostics",
+                  "slug": "logs-and-diagnostics"
+                }
+              ],
+              "relativePath": "architecture/extract-object-text-deployment.md"
+            },
+            {
+              "title": "Azure Landing Zones",
+              "href": "/docs/sources/azure-knowledge/architecture/landing-zones/",
+              "section": "architecture",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "What it is",
+                  "slug": "what-it-is"
+                },
+                {
+                  "depth": 2,
+                  "text": "Architecture components",
+                  "slug": "architecture-components"
+                },
+                {
+                  "depth": 2,
+                  "text": "Enterprise-scale landing zone",
+                  "slug": "enterprise-scale-landing-zone"
+                },
+                {
+                  "depth": 2,
+                  "text": "Deployment options",
+                  "slug": "deployment-options"
+                },
+                {
+                  "depth": 2,
+                  "text": "Decision: Hub-spoke vs. Virtual WAN",
+                  "slug": "decision-hub-spoke-vs-virtual-wan"
+                },
+                {
+                  "depth": 2,
+                  "text": "Related terms",
+                  "slug": "related-terms"
+                }
+              ],
+              "relativePath": "architecture/landing-zones.md"
+            },
+            {
+              "title": "Extract Text from Objects Using AI Builder and Document Intelligence",
+              "href": "/docs/sources/azure-knowledge/services/ai-ml/extract-object-text/",
+              "section": "services",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "Table of Contents",
+                  "slug": "table-of-contents"
+                },
+                {
+                  "depth": 2,
+                  "text": "Overview",
+                  "slug": "overview"
+                },
+                {
+                  "depth": 3,
+                  "text": "Problem",
+                  "slug": "problem"
+                },
+                {
+                  "depth": 3,
+                  "text": "Solution",
+                  "slug": "solution"
+                },
+                {
+                  "depth": 3,
+                  "text": "Use Cases",
+                  "slug": "use-cases"
+                },
+                {
+                  "depth": 2,
+                  "text": "Architecture",
+                  "slug": "architecture"
+                },
+                {
+                  "depth": 3,
+                  "text": "Data Flow",
+                  "slug": "data-flow"
+                },
+                {
+                  "depth": 2,
+                  "text": "Visual Flow Diagram",
+                  "slug": "visual-flow-diagram"
+                },
+                {
+                  "depth": 3,
+                  "text": "High-Level Process",
+                  "slug": "high-level-process"
+                },
+                {
+                  "depth": 3,
+                  "text": "Geometry Intersection Logic",
+                  "slug": "geometry-intersection-logic"
+                },
+                {
+                  "depth": 3,
+                  "text": "Intersection Test (Visual)",
+                  "slug": "intersection-test-visual"
+                },
+                {
+                  "depth": 2,
+                  "text": "Component Breakdown",
+                  "slug": "component-breakdown"
+                },
+                {
+                  "depth": 3,
+                  "text": "Microsoft Power Platform",
+                  "slug": "microsoft-power-platform"
+                },
+                {
+                  "depth": 3,
+                  "text": "Azure",
+                  "slug": "azure"
+                },
+                {
+                  "depth": 3,
+                  "text": "Microsoft 365",
+                  "slug": "microsoft-365"
+                },
+                {
+                  "depth": 2,
+                  "text": "Prerequisites",
+                  "slug": "prerequisites"
+                },
+                {
+                  "depth": 3,
+                  "text": "Azure Subscription",
+                  "slug": "azure-subscription"
+                },
+                {
+                  "depth": 3,
+                  "text": "Power Platform",
+                  "slug": "power-platform"
+                },
+                {
+                  "depth": 3,
+                  "text": "Microsoft 365",
+                  "slug": "microsoft-365"
+                },
+                {
+                  "depth": 3,
+                  "text": "Development Tools",
+                  "slug": "development-tools"
+                },
+                {
+                  "depth": 2,
+                  "text": "Step-by-Step Implementation",
+                  "slug": "step-by-step-implementation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Step 1: Train the AI Builder Object Detection Model",
+                  "slug": "step-1-train-the-ai-builder-object-detection-model"
+                },
+                {
+                  "depth": 3,
+                  "text": "Step 2: Create the Azure Document Intelligence Resource",
+                  "slug": "step-2-create-the-azure-document-intelligence-resource"
+                },
+                {
+                  "depth": 3,
+                  "text": "Step 3: Deploy the Geometry-Matching Azure Function",
+                  "slug": "step-3-deploy-the-geometry-matching-azure-function"
+                },
+                {
+                  "depth": 3,
+                  "text": "Step 4: Build the Power Automate Flow",
+                  "slug": "step-4-build-the-power-automate-flow"
+                },
+                {
+                  "depth": 3,
+                  "text": "Step 5: Configure SharePoint Metadata Columns",
+                  "slug": "step-5-configure-sharepoint-metadata-columns"
+                },
+                {
+                  "depth": 3,
+                  "text": "Step 6: Configure PnP Modern Search Web Parts",
+                  "slug": "step-6-configure-pnp-modern-search-web-parts"
+                },
+                {
+                  "depth": 2,
+                  "text": "Code: Azure Function for Geometry Matching",
+                  "slug": "code-azure-function-for-geometry-matching"
+                },
+                {
+                  "depth": 3,
+                  "text": "Node.js (TypeScript) Implementation",
+                  "slug": "node-js-typescript-implementation"
+                },
+                {
+                  "depth": 3,
+                  "text": "package.json",
+                  "slug": "package-json"
+                },
+                {
+                  "depth": 3,
+                  "text": "tsconfig.json",
+                  "slug": "tsconfig-json"
+                },
+                {
+                  "depth": 3,
+                  "text": "Unit Tests",
+                  "slug": "unit-tests"
+                },
+                {
+                  "depth": 2,
+                  "text": "Deployment Guide",
+                  "slug": "deployment-guide"
+                },
+                {
+                  "depth": 3,
+                  "text": "Deployment Architecture",
+                  "slug": "deployment-architecture"
+                },
+                {
+                  "depth": 3,
+                  "text": "Prerequisites Checklist",
+                  "slug": "prerequisites-checklist"
+                },
+                {
+                  "depth": 3,
+                  "text": "Azure Resource Deployment",
+                  "slug": "azure-resource-deployment"
+                },
+                {
+                  "depth": 3,
+                  "text": "CI/CD Pipeline (GitHub Actions)",
+                  "slug": "ci-cd-pipeline-github-actions"
+                },
+                {
+                  "depth": 3,
+                  "text": "Power Platform ALM",
+                  "slug": "power-platform-alm"
+                },
+                {
+                  "depth": 3,
+                  "text": "Post-Deployment Validation",
+                  "slug": "post-deployment-validation"
+                },
+                {
+                  "depth": 2,
+                  "text": "Well-Architected Considerations",
+                  "slug": "well-architected-considerations"
+                },
+                {
+                  "depth": 3,
+                  "text": "Reliability",
+                  "slug": "reliability"
+                },
+                {
+                  "depth": 3,
+                  "text": "Security",
+                  "slug": "security"
+                },
+                {
+                  "depth": 3,
+                  "text": "Cost Optimization",
+                  "slug": "cost-optimization"
+                },
+                {
+                  "depth": 3,
+                  "text": "Performance Efficiency",
+                  "slug": "performance-efficiency"
+                },
+                {
+                  "depth": 3,
+                  "text": "Operational Excellence",
+                  "slug": "operational-excellence"
+                },
+                {
+                  "depth": 2,
+                  "text": "Cost Estimation",
+                  "slug": "cost-estimation"
+                },
+                {
+                  "depth": 3,
+                  "text": "Azure Services (per month)",
+                  "slug": "azure-services-per-month"
+                },
+                {
+                  "depth": 3,
+                  "text": "Power Platform",
+                  "slug": "power-platform"
+                },
+                {
+                  "depth": 2,
+                  "text": "Alternatives",
+                  "slug": "alternatives"
+                },
+                {
+                  "depth": 2,
+                  "text": "Next Steps",
+                  "slug": "next-steps"
+                },
+                {
+                  "depth": 3,
+                  "text": "Additional Resources",
+                  "slug": "additional-resources"
+                }
+              ],
+              "relativePath": "services/ai-ml/extract-object-text.md"
+            },
+            {
+              "title": "Azure Virtual Machines",
+              "href": "/docs/sources/azure-knowledge/services/compute/virtual-machines/",
+              "section": "services",
+              "headings": [
+                {
+                  "depth": 2,
+                  "text": "What it is",
+                  "slug": "what-it-is"
+                },
+                {
+                  "depth": 2,
+                  "text": "How it works",
+                  "slug": "how-it-works"
+                },
+                {
+                  "depth": 2,
+                  "text": "Key concepts",
+                  "slug": "key-concepts"
+                },
+                {
+                  "depth": 2,
+                  "text": "VM series cheat sheet",
+                  "slug": "vm-series-cheat-sheet"
+                },
+                {
+                  "depth": 2,
+                  "text": "Step-by-step: Create a VM",
+                  "slug": "step-by-step-create-a-vm"
+                },
+                {
+                  "depth": 2,
+                  "text": "SLA and cost",
+                  "slug": "sla-and-cost"
+                },
+                {
+                  "depth": 2,
+                  "text": "Related terms",
+                  "slug": "related-terms"
+                }
+              ],
+              "relativePath": "services/compute/virtual-machines.md"
+            }
+          ],
+          "navigation": [
+            "concepts",
+            "architecture",
+            "guides",
+            "services",
+            "glossary"
+          ]
+        }
+      ]
     }
   ],
   "sidebar": [
@@ -3441,6 +6140,70 @@
           ]
         }
       ]
+    },
+    {
+      "label": "Learning",
+      "items": [
+        {
+          "label": "Azure Knowledge",
+          "href": "/docs/sources/azure-knowledge/",
+          "children": [
+            {
+              "label": "Core Azure Concepts",
+              "children": [
+                {
+                  "label": "Azure Regions and Availability Zones",
+                  "href": "/docs/sources/azure-knowledge/concepts/regions-and-azs/"
+                },
+                {
+                  "label": "Azure Well-Architected Framework",
+                  "href": "/docs/sources/azure-knowledge/concepts/azure-well-architected/"
+                }
+              ],
+              "href": "/docs/sources/azure-knowledge/concepts/"
+            },
+            {
+              "label": "Azure Architecture Patterns",
+              "children": [
+                {
+                  "label": "Azure Landing Zones",
+                  "href": "/docs/sources/azure-knowledge/architecture/landing-zones/"
+                },
+                {
+                  "label": "Deployment Guide: Extract Text from Objects",
+                  "href": "/docs/sources/azure-knowledge/architecture/extract-object-text-deployment/"
+                }
+              ],
+              "href": "/docs/sources/azure-knowledge/architecture/"
+            },
+            {
+              "label": "Azure Services Deep Dives",
+              "children": [
+                {
+                  "label": "Extract Text from Objects Using AI Builder and Document Intelligence",
+                  "href": "/docs/sources/azure-knowledge/services/ai-ml/extract-object-text/"
+                },
+                {
+                  "label": "Azure Compute",
+                  "children": [
+                    {
+                      "label": "Azure Virtual Machines",
+                      "href": "/docs/sources/azure-knowledge/services/compute/virtual-machines/"
+                    }
+                  ],
+                  "href": "/docs/sources/azure-knowledge/services/compute/"
+                }
+              ],
+              "href": "/docs/sources/azure-knowledge/services/"
+            },
+            {
+              "label": "System Design Glossary — Azure Edition",
+              "children": [],
+              "href": "/docs/sources/azure-knowledge/glossary/"
+            }
+          ]
+        }
+      ]
     }
   ],
   "pages": [
@@ -3685,7 +6448,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -3732,7 +6497,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -3769,7 +6536,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -3826,7 +6595,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -3883,7 +6654,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -3940,7 +6713,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -3997,7 +6772,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4054,7 +6831,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4111,7 +6890,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4168,7 +6949,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4225,7 +7008,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4282,7 +7067,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4339,7 +7126,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4396,7 +7185,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4453,7 +7244,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4510,7 +7303,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4567,7 +7362,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4624,7 +7421,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4681,7 +7480,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4738,7 +7539,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4795,7 +7598,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4852,7 +7657,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4909,7 +7716,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4956,7 +7765,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -4982,7 +7793,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5014,7 +7827,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5040,7 +7855,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5072,7 +7889,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5098,7 +7917,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5124,7 +7945,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5150,7 +7973,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5176,7 +8001,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5213,7 +8040,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5260,7 +8089,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5302,7 +8133,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5359,7 +8192,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5401,7 +8236,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5443,7 +8280,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5490,7 +8329,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5537,7 +8378,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5584,7 +8427,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5631,7 +8476,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5683,7 +8530,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5740,7 +8589,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5782,7 +8633,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5824,7 +8677,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5850,7 +8705,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5887,7 +8744,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5934,7 +8793,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -5986,7 +8847,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -6058,7 +8921,9 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
     },
     {
       "kind": "source",
@@ -6084,7 +8949,1594 @@
         "agents",
         "operations",
         "documentation"
-      ]
+      ],
+      "updatedAt": "2026-09-05T17:03:46.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Compute",
+      "description": "```mermaid",
+      "content": "Azure Compute Decision tree: Which compute service? Services Service Best for Management level Scaling Virtual Machines Full OS control, legacy apps, custom software IaaS Manual / VMSS App Service Web apps, REST APIs, mobile backends PaaS Built in auto Azure Functions Event driven, short running, serverless Serverless Auto consumption AKS Kubernetes orchestration, microservices PaaS / Orchestrated Cluster + HPA Container Instances Simple containers, batch jobs, CI runners Serverless Per instance Container Apps Microservices, KEDA driven event scaling PaaS / Serverless Auto + KEDA Azure Batch Large scale parallel batch computing Managed Job level Service deep dives Virtual Machines virtual machines.md App Service app service.md Azure Functions functions.md Azure Kubernetes Service aks.md",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Decision tree: Which compute service?",
+          "slug": "decision-tree-which-compute-service"
+        },
+        {
+          "depth": 2,
+          "text": "Services",
+          "slug": "services"
+        },
+        {
+          "depth": 2,
+          "text": "Service deep dives",
+          "slug": "service-deep-dives"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/services/compute/README.md",
+      "relativePath": "services/compute/README.md",
+      "slug": "sources/azure-knowledge/services/compute",
+      "href": "/docs/sources/azure-knowledge/services/compute/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "services",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Services Deep Dives",
+      "description": "Category-by-category exploration of Azure services. Each service page covers:",
+      "content": "Azure Services Deep Dives Category by category exploration of Azure services. Each service page covers: What it is — plain language definition How it works — architecture, components, data flow When to use it — decision criteria, trade offs Step by step — hands on walkthrough Diagram — visual representation Related terms — cross references Categories Category Directory Compute services/compute/ compute/ Networking services/networking/ networking/ Storage services/storage/ storage/ Databases services/databases/ databases/ AI + ML services/ai ml/ ai ml/ Security services/security/ security/ DevOps services/devops/ devops/ Integration services/integration/ integration/ Management services/management/ management/ Migration services/migration/ migration/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Categories",
+          "slug": "categories"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/services/README.md",
+      "relativePath": "services/README.md",
+      "slug": "sources/azure-knowledge/services",
+      "href": "/docs/sources/azure-knowledge/services/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "services",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "System Design Glossary — Azure Edition",
+      "description": "System design and distributed systems terminology mapped to Azure services.",
+      "content": "System Design Glossary — Azure Edition System design and distributed systems terminology mapped to Azure services. Each term links theory to concrete Azure implementation. A Active Active A deployment where multiple regions serve traffic simultaneously. Azure: Front Door + Cosmos DB multi master + active active App Service deployments Active Passive Active Standby Primary region serves traffic; secondary region stays idle until failover. Azure: SQL Database failover groups, Site Recovery Anti Corruption Layer A translation layer between different bounded contexts or legacy systems. Azure: API Management policies, Azure Functions as adapters AP Availability + Partition Tolerance A CAP theorem category: the system stays available even if the network partitions, but may return stale data. Azure: Cosmos DB AP mode , Azure Cache for Redis Auto scaling Dynamically adjusting compute resources based on load. Azure: VMSS, App Service Autoscale, AKS HPA + KEDA, Functions consumption plan Availability System Design The percentage of time a system is operational and accessible usually measured as \"nines\" . Azure SLA: 99.9% 3 nines to 99.995% 4.5 nines depending on service configuration Formula: Uptime / Uptime + Downtime Availability Set Logical grouping of VMs to protect against rack level failures. Azure: 2+ VMs in an availability set = 99.95% SLA Availability Zone Physically separate datacenter within a region. Azure: 3 per supported region, ~1 2 ms latency between zones B Backpressure A mechanism to regulate data flow when a downstream system is overwhelmed. Azure: Service Bus sessions, Event Hubs throttling, Functions concurrency limits Bastion Host A hardened VM that serves as the entry point to a private network. Azure: Azure Bastion fully managed PaaS Blue Green Deployment Two identical environments: one live blue , one staging green . Switch traffic instantly. Azure: App Service deployment slots, Front Door, Traffic Manager Bounded Context A logical boundary in Domain Driven Design where a specific domain model applies. Azure: API Management products, separate AKS namespaces, separate subscriptions Bulkhead Pattern Isolating resources into pools so a failure in one pool doesn't cascade. Azure: AKS node pools, separate App Service plans, separate Service Bus namespaces C Cache Aside An application pattern where the app checks cache before reading from the database. Azure: Azure Cache for Redis + any database CAP Theorem A distributed system can only guarantee two of three: Consistency, Availability, Partition Tolerance. CP Consistency + Partition Tolerance : Azure SQL Database, Cosmos DB Strong consistency AP Availability + Partition Tolerance : Cosmos DB Eventual consistency , Azure Cache CQRS Command Query Responsibility Segregation Separating read and write operations into different models. Azure: Azure Functions commands + Cosmos DB change feed projections + Azure Cache reads Circuit Breaker Prevents repeated calls to a failing service, giving it time to recover. Azure: App Service health checks, Application Insights, Istio/Envoy in AKS Claim Check Store large messages in blob storage, pass a reference through the message bus. Azure: Service Bus message with large payload stored in Blob Storage Consistency System Design Every read returns the most recent write or an error. Strong: SQL Database, Cosmos DB Strong , Azure Table Storage Eventual: Cosmos DB Eventual , Cache for Redis Consistent Prefix: Cosmos DB Consistent Prefix, Bounded Staleness Container Orchestration Automated deployment, scaling, and management of containers. Azure: Azure Kubernetes Service AKS , Container Instances, Container Apps Content Delivery Network CDN A geographically distributed network of proxy servers and their data centers. Azure: Azure CDN from Microsoft , Azure Front Door, Azure Storage static websites + CDN Correlation ID A unique identifier passed across service boundaries to trace a request end to end. Azure: Application Insights operation Id, operation ParentId , custom HTTP headers D Database Migration Moving data from one database platform to another. Azure: Azure Database Migration Service, Data Factory, SQL Migration Extension Data Lake Storage repository that holds vast amounts of raw data in native format. Azure: Azure Data Lake Storage Gen2 built on Blob Storage + hierarchical namespace Dead Letter Queue A queue for messages that cannot be processed successfully. Azure: Service Bus dead letter queue, Storage Queue poison messages Delegation of Trust Passing authentication/authorization trust from one service to another. Azure: Managed Identities, OAuth 2.0 On Behalf Of flow in Entra ID Distributed Tracing Tracking a request through multiple services in a distributed system. Azure: Application Insights distributed tracing , OpenTelemetry E Event Sourcing Storing state changes as a sequence of events rather than current state. Azure: Cosmos DB change feed, Event Hubs capture, Azure Functions Eventually Consistent Given enough time without updates, all replicas converge to the same value. Azure: Cosmos DB Eventual consistency , CDN propagation, DNS propagation ExpressRoute A dedicated private connection from on premises to Azure. Azure: ExpressRoute bypasses the public internet F Failover Automatic or manual switch to a secondary system when the primary fails. Azure: SQL Database failover groups, Cosmos DB multi region writes, Site Recovery Fan Out / Fan In Broadcasting a message to multiple handlers fan out then aggregating results fan in . Fan out Azure: Event Grid, Event Hubs, Service Bus topics Fan in Azure: Azure Functions, Logic Apps, Durable Functions Fault Domain A group of hardware that shares a single point of failure. Azure: By default 2 fault domains per availability set, 3 per availability zone Function as a Service FaaS Run code in stateless containers triggered by events, with automatic scaling. Azure: Azure Functions consumption, premium, dedicated plans G Geo Redundancy Replicating data across geographically separated regions. Azure: GRS Geo Redundant Storage , Cosmos DB multi region, SQL Geo Replication Graceful Degradation When a non critical feature fails, the system continues without it. Azure: App Service health checks + circuit breaker, Front Door + origin groups H Health Probe / Health Check An endpoint or process that reports whether a service is functioning. Azure: App Service health check, Load Balancer health probes, AKS liveness/readiness probes Horizontal Scaling Scaling Out Adding more instances of a resource to handle increased load. Azure: VMSS, App Service scale out, AKS HPA, Functions consumption plan Hub and Spoke Network topology with a central hub VNet connected to multiple spoke VNets. Azure: Hub VNet Firewall, Gateway + peered spoke VNets I Idempotency An operation that produces the same result no matter how many times it's executed. Azure: ARM/Bicep declarative , Service Bus duplicate detection, Storage Blob PUT semantics Idle Connection A network connection that has no active data transfer. Azure: Azure Load Balancer idle timeout default 4 min, configurable up to 30 min Infrastructure as Code IaC Managing infrastructure through machine readable definition files. Azure: ARM templates, Bicep, Terraform, Pulumi, Azure CLI J Just in Time JIT Access Temporary elevation of privileges for specific tasks. Azure: Microsoft Entra Privileged Identity Management PIM , Defender for Cloud JIT VM access K Key Rotation Periodically replacing cryptographic keys to limit exposure. Azure: Key Vault key rotation policy, Key Vault + Managed HSM Kubernetes Container orchestration platform for automating deployment, scaling, and management. Azure: Azure Kubernetes Service AKS , Azure Arc enabled Kubernetes L Latency The time it takes for data to travel from source to destination. Azure: ~1 2 ms intra region, ~10 100 ms inter region US , higher globally Load Balancing Distributing incoming traffic across multiple backend servers. Azure L4: Azure Load Balancer internal/external Azure L7: Application Gateway, Front Door, Traffic Manager DNS Locks Distributed Preventing concurrent access to a shared resource across multiple processes. Azure: Azure Blob Storage lease, Cosmos DB optimistic concurrency etag M Materialized View A pre computed query result stored for fast read access. Azure: Cosmos DB change feed → Azure Functions → cache or secondary collection Message Broker Middleware that enables asynchronous communication between services. Azure: Service Bus, Event Hubs, Event Grid, Storage Queues Microservices An architectural style that structures an application as a collection of small, loosely coupled services. Azure: AKS, Container Apps, Service Fabric, API Management + Functions Multi tenancy A single instance of software serving multiple tenants, each isolated from others. Azure: Azure itself is multi tenant; SaaS on Azure uses subscription/resource group isolation N Namespace A logical container for resources that provides isolation. Azure: Service Bus namespace, Event Hubs namespace, AKS namespace, DNS zone N tier Architecture Layered architecture with presentation, application, and data tiers. Azure: Front Door → App Service → SQL Database 3 tier , App Gateway → VM → SQL Always On O Observability The ability to measure a system's internal state from its external outputs. Three pillars: Metrics, Logs, Traces Azure: Azure Monitor, Application Insights, Log Analytics, Prometheus + Grafana AKS Orchestration Microservices Coordinating the execution of multiple services or functions to complete a workflow. Azure: Durable Functions orchestrator , Logic Apps, AKS, Azure Data Factory P Partition Database Dividing a database into smaller, manageable pieces. Azure: Cosmos DB logical partitions , SQL Database sharding, table partitioning Partition Key The key used to distribute data across partitions. Azure: Cosmos DB partition key selection is critical for performance and cost Pattern: Ambassador Proxy sidecar that handles cross cutting concerns retries, circuit breaking, auth . Azure: Istio/Envoy AKS , Application Gateway reverse proxy Pattern: Saga A sequence of local transactions where each publishes an event to trigger the next. Azure: Durable Functions chaining, fan out/fan in , Service Bus + Functions Pattern: Sidecar A co located helper process that extends or enhances the main container. Azure: AKS sidecar pattern Envoy, Fluentd, Key Vault FlexVolume Pattern: Strangler Fig Gradually replacing a legacy system by routing functionality to new services. Azure: Front Door + App Service routing, API Management + Function Apps Private Endpoint Network interface that connects privately to an Azure service via a private IP. Azure: Private Link private endpoint , Private DNS zones Proximity Placement Group Grouping VMs close together for low latency communication. Azure: Proximity Placement Groups Q Queue A buffer that decouples message producers from consumers. Azure: Azure Queue Storage, Service Bus Queue, Event Hubs Quorum The minimum number of nodes that must agree on a value in a distributed system. Azure: Cosmos DB configurable consistency , SQL Always On Availability Groups R Rate Limiting Controlling the rate of traffic sent or received. Azure: API Management rate limit, quota policies , Front Door WAF rate limiting Read Replica A read only copy of a database for offloading read traffic. Azure: SQL Database read scale out, Cosmos DB read regions, PostgreSQL read replicas Retry Pattern Reattempting a failed operation, typically with exponential backoff. Azure: .NET SDK retry policies, Polly library, Application Insights automatic retries Reverse Proxy A server that sits in front of backend services and forwards client requests. Azure: Application Gateway, Azure Front Door, NGINX AKS/VM RBAC Role Based Access Control Authorization system that grants permissions based on assigned roles. Azure: Azure RBAC IAM , Entra ID RBAC, custom roles RTO / RPO RTO Recovery Time Objective : Maximum acceptable downtime RPO Recovery Point Objective : Maximum acceptable data loss Azure: Site Recovery RTO minutes, RPO seconds , SQL Geo Replication RPO < 5s S Saga Pattern A sequence of local transactions that are coordinated via events or a choreographer. Choreography: Service Bus + Event Grid Orchestration: Durable Functions, Logic Apps Scale Set A group of identical, auto scaling VMs. Azure: Virtual Machine Scale Sets VMSS Service Principal An identity created for use with applications, services, and automation tools. Azure: App registrations, service principals in Entra ID Sharding Horizontal partitioning of data across multiple independent databases. Azure: SQL Database elastic scale sharding , Cosmos DB partitioning Shutdown Graceful Allowing in flight requests to complete before stopping a service. Azure: AKS pod graceful shutdown preStop hook , App Service auto swap SLA Service Level Agreement The guaranteed level of service availability. Azure: 99.9% to 99.995% depending on service and configuration Composite SLA: SLA A × SLA B for dependent services SNAT Source Network Address Translation Mapping a private IP to a public IP for outbound traffic. Azure: Azure Load Balancer outbound rules, NAT Gateway, VNet NAT Stateful vs Stateless Stateful: Maintains session state across requests Azure: Stateful services Service Fabric , VM with local disks, session affinity ARR Stateless: No session state stored on the server Azure: Functions default , App Service stateless , AKS stateless workloads Static Web App A pre rendered web application served from a global edge network. Azure: Static Web Apps hosted by Azure , Blob Storage static website Sticky Session Session Affinity Routing requests from the same client to the same backend server. Azure: App Service ARR affinity, Application Gateway session affinity Strangler Fig Gradually replace a monolithic application by incrementally replacing specific functions. Azure: Front Door routing rules, API Management incremental migration T Throttling Limiting the number of requests a service processes to protect itself. Azure: Event Hubs throughput units , Functions concurrency , API Management rate limit , Cosmos DB RU/s Throughput The rate at which a system processes requests requests per second, MB/s, etc. . Azure: Cosmos DB RU/s, Event Hubs throughput units, Storage account limits Timeout The maximum time a system waits for an operation to complete. Azure: Load Balancer idle timeout 4 30 min , Functions functionTimeout 5 10 min , ARM deployment timeout TLS/SSL Termination Decrypting TLS at a load balancer so backend services receive plain HTTP. Azure: Application Gateway, Front Door, Load Balancer + self managed proxy Traffic Manager DNS based traffic routing across global Azure regions. Azure: Traffic Manager routing methods: performance, priority, weighted, geographic U Update Domain A logical group of VMs that are updated together during planned maintenance. Azure: Default 5 update domains per availability set max 20 Unit Testing Cloud Testing a single component in isolation. Azure: No specific Azure service; standard test frameworks + Azurite local storage emulator , Functions host V Vertical Scaling Scaling Up Adding more power CPU, RAM, disk to an existing instance. Azure: Resize VM, scale up App Service plan, increase Cosmos DB RU/s Virtual Network VNet An isolated network in Azure, equivalent to a traditional on premises network. Azure: VNet, subnets, peering, NSG, ASG, VNet integration App Service, Functions Virtual WAN Managed global transit network architecture in Azure. Azure: Virtual WAN Microsoft managed hub spoke at global scale W Web Application Firewall WAF Filters and monitors HTTP traffic to protect web applications. Azure: Front Door WAF, Application Gateway WAF, Azure WAF policy Well Architected Framework Microsoft's set of guiding tenets for building high quality cloud workloads. Azure: Well Architected Review ../concepts/azure well architected.md Pillars: Reliability, Security, Cost Optimization, Operational Excellence, Performance Efficiency Workload A discrete set of Azure resources that work together to support a specific function. Azure: Workloads are the unit of the Well Architected Review Z Zero Trust Security model: \"never trust, always verify\" — no implicit trust based on network location. Azure: Entra ID Conditional Access, Defender for Cloud, Azure Policy, Just in Time access Zone Redundant Service that replicates across multiple Availability Zones automatically. Azure: Cosmos DB, Event Hubs, AKS, SQL Database zone redundant Contribution Add terms alphabetically. Each entry: Term — system design term Definition — one line plain English Azure mapping — which Azure services implement this pattern",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "A",
+          "slug": "a"
+        },
+        {
+          "depth": 3,
+          "text": "Active-Active",
+          "slug": "active-active"
+        },
+        {
+          "depth": 3,
+          "text": "Active-Passive (Active-Standby)",
+          "slug": "active-passive-active-standby"
+        },
+        {
+          "depth": 3,
+          "text": "Anti-Corruption Layer",
+          "slug": "anti-corruption-layer"
+        },
+        {
+          "depth": 3,
+          "text": "AP (Availability + Partition Tolerance)",
+          "slug": "ap-availability-partition-tolerance"
+        },
+        {
+          "depth": 3,
+          "text": "Auto-scaling",
+          "slug": "auto-scaling"
+        },
+        {
+          "depth": 3,
+          "text": "Availability (System Design)",
+          "slug": "availability-system-design"
+        },
+        {
+          "depth": 3,
+          "text": "Availability Set",
+          "slug": "availability-set"
+        },
+        {
+          "depth": 3,
+          "text": "Availability Zone",
+          "slug": "availability-zone"
+        },
+        {
+          "depth": 2,
+          "text": "B",
+          "slug": "b"
+        },
+        {
+          "depth": 3,
+          "text": "Backpressure",
+          "slug": "backpressure"
+        },
+        {
+          "depth": 3,
+          "text": "Bastion Host",
+          "slug": "bastion-host"
+        },
+        {
+          "depth": 3,
+          "text": "Blue-Green Deployment",
+          "slug": "blue-green-deployment"
+        },
+        {
+          "depth": 3,
+          "text": "Bounded Context",
+          "slug": "bounded-context"
+        },
+        {
+          "depth": 3,
+          "text": "Bulkhead Pattern",
+          "slug": "bulkhead-pattern"
+        },
+        {
+          "depth": 2,
+          "text": "C",
+          "slug": "c"
+        },
+        {
+          "depth": 3,
+          "text": "Cache-Aside",
+          "slug": "cache-aside"
+        },
+        {
+          "depth": 3,
+          "text": "CAP Theorem",
+          "slug": "cap-theorem"
+        },
+        {
+          "depth": 3,
+          "text": "CQRS (Command Query Responsibility Segregation)",
+          "slug": "cqrs-command-query-responsibility-segregation"
+        },
+        {
+          "depth": 3,
+          "text": "Circuit Breaker",
+          "slug": "circuit-breaker"
+        },
+        {
+          "depth": 3,
+          "text": "Claim Check",
+          "slug": "claim-check"
+        },
+        {
+          "depth": 3,
+          "text": "Consistency (System Design)",
+          "slug": "consistency-system-design"
+        },
+        {
+          "depth": 3,
+          "text": "Container Orchestration",
+          "slug": "container-orchestration"
+        },
+        {
+          "depth": 3,
+          "text": "Content Delivery Network (CDN)",
+          "slug": "content-delivery-network-cdn"
+        },
+        {
+          "depth": 3,
+          "text": "Correlation ID",
+          "slug": "correlation-id"
+        },
+        {
+          "depth": 2,
+          "text": "D",
+          "slug": "d"
+        },
+        {
+          "depth": 3,
+          "text": "Database Migration",
+          "slug": "database-migration"
+        },
+        {
+          "depth": 3,
+          "text": "Data Lake",
+          "slug": "data-lake"
+        },
+        {
+          "depth": 3,
+          "text": "Dead Letter Queue",
+          "slug": "dead-letter-queue"
+        },
+        {
+          "depth": 3,
+          "text": "Delegation of Trust",
+          "slug": "delegation-of-trust"
+        },
+        {
+          "depth": 3,
+          "text": "Distributed Tracing",
+          "slug": "distributed-tracing"
+        },
+        {
+          "depth": 2,
+          "text": "E",
+          "slug": "e"
+        },
+        {
+          "depth": 3,
+          "text": "Event Sourcing",
+          "slug": "event-sourcing"
+        },
+        {
+          "depth": 3,
+          "text": "Eventually Consistent",
+          "slug": "eventually-consistent"
+        },
+        {
+          "depth": 3,
+          "text": "ExpressRoute",
+          "slug": "expressroute"
+        },
+        {
+          "depth": 2,
+          "text": "F",
+          "slug": "f"
+        },
+        {
+          "depth": 3,
+          "text": "Failover",
+          "slug": "failover"
+        },
+        {
+          "depth": 3,
+          "text": "Fan-Out / Fan-In",
+          "slug": "fan-out-fan-in"
+        },
+        {
+          "depth": 3,
+          "text": "Fault Domain",
+          "slug": "fault-domain"
+        },
+        {
+          "depth": 3,
+          "text": "Function-as-a-Service (FaaS)",
+          "slug": "function-as-a-service-faas"
+        },
+        {
+          "depth": 2,
+          "text": "G",
+          "slug": "g"
+        },
+        {
+          "depth": 3,
+          "text": "Geo-Redundancy",
+          "slug": "geo-redundancy"
+        },
+        {
+          "depth": 3,
+          "text": "Graceful Degradation",
+          "slug": "graceful-degradation"
+        },
+        {
+          "depth": 2,
+          "text": "H",
+          "slug": "h"
+        },
+        {
+          "depth": 3,
+          "text": "Health Probe / Health Check",
+          "slug": "health-probe-health-check"
+        },
+        {
+          "depth": 3,
+          "text": "Horizontal Scaling (Scaling Out)",
+          "slug": "horizontal-scaling-scaling-out"
+        },
+        {
+          "depth": 3,
+          "text": "Hub and Spoke",
+          "slug": "hub-and-spoke"
+        },
+        {
+          "depth": 2,
+          "text": "I",
+          "slug": "i"
+        },
+        {
+          "depth": 3,
+          "text": "Idempotency",
+          "slug": "idempotency"
+        },
+        {
+          "depth": 3,
+          "text": "Idle Connection",
+          "slug": "idle-connection"
+        },
+        {
+          "depth": 3,
+          "text": "Infrastructure as Code (IaC)",
+          "slug": "infrastructure-as-code-iac"
+        },
+        {
+          "depth": 2,
+          "text": "J",
+          "slug": "j"
+        },
+        {
+          "depth": 3,
+          "text": "Just-in-Time (JIT) Access",
+          "slug": "just-in-time-jit-access"
+        },
+        {
+          "depth": 2,
+          "text": "K",
+          "slug": "k"
+        },
+        {
+          "depth": 3,
+          "text": "Key Rotation",
+          "slug": "key-rotation"
+        },
+        {
+          "depth": 3,
+          "text": "Kubernetes",
+          "slug": "kubernetes"
+        },
+        {
+          "depth": 2,
+          "text": "L",
+          "slug": "l"
+        },
+        {
+          "depth": 3,
+          "text": "Latency",
+          "slug": "latency"
+        },
+        {
+          "depth": 3,
+          "text": "Load Balancing",
+          "slug": "load-balancing"
+        },
+        {
+          "depth": 3,
+          "text": "Locks (Distributed)",
+          "slug": "locks-distributed"
+        },
+        {
+          "depth": 2,
+          "text": "M",
+          "slug": "m"
+        },
+        {
+          "depth": 3,
+          "text": "Materialized View",
+          "slug": "materialized-view"
+        },
+        {
+          "depth": 3,
+          "text": "Message Broker",
+          "slug": "message-broker"
+        },
+        {
+          "depth": 3,
+          "text": "Microservices",
+          "slug": "microservices"
+        },
+        {
+          "depth": 3,
+          "text": "Multi-tenancy",
+          "slug": "multi-tenancy"
+        },
+        {
+          "depth": 2,
+          "text": "N",
+          "slug": "n"
+        },
+        {
+          "depth": 3,
+          "text": "Namespace",
+          "slug": "namespace"
+        },
+        {
+          "depth": 3,
+          "text": "N-tier Architecture",
+          "slug": "n-tier-architecture"
+        },
+        {
+          "depth": 2,
+          "text": "O",
+          "slug": "o"
+        },
+        {
+          "depth": 3,
+          "text": "Observability",
+          "slug": "observability"
+        },
+        {
+          "depth": 3,
+          "text": "Orchestration (Microservices)",
+          "slug": "orchestration-microservices"
+        },
+        {
+          "depth": 2,
+          "text": "P",
+          "slug": "p"
+        },
+        {
+          "depth": 3,
+          "text": "Partition (Database)",
+          "slug": "partition-database"
+        },
+        {
+          "depth": 3,
+          "text": "Partition Key",
+          "slug": "partition-key"
+        },
+        {
+          "depth": 3,
+          "text": "Pattern: Ambassador",
+          "slug": "pattern-ambassador"
+        },
+        {
+          "depth": 3,
+          "text": "Pattern: Saga",
+          "slug": "pattern-saga"
+        },
+        {
+          "depth": 3,
+          "text": "Pattern: Sidecar",
+          "slug": "pattern-sidecar"
+        },
+        {
+          "depth": 3,
+          "text": "Pattern: Strangler Fig",
+          "slug": "pattern-strangler-fig"
+        },
+        {
+          "depth": 3,
+          "text": "Private Endpoint",
+          "slug": "private-endpoint"
+        },
+        {
+          "depth": 3,
+          "text": "Proximity Placement Group",
+          "slug": "proximity-placement-group"
+        },
+        {
+          "depth": 2,
+          "text": "Q",
+          "slug": "q"
+        },
+        {
+          "depth": 3,
+          "text": "Queue",
+          "slug": "queue"
+        },
+        {
+          "depth": 3,
+          "text": "Quorum",
+          "slug": "quorum"
+        },
+        {
+          "depth": 2,
+          "text": "R",
+          "slug": "r"
+        },
+        {
+          "depth": 3,
+          "text": "Rate Limiting",
+          "slug": "rate-limiting"
+        },
+        {
+          "depth": 3,
+          "text": "Read Replica",
+          "slug": "read-replica"
+        },
+        {
+          "depth": 3,
+          "text": "Retry Pattern",
+          "slug": "retry-pattern"
+        },
+        {
+          "depth": 3,
+          "text": "Reverse Proxy",
+          "slug": "reverse-proxy"
+        },
+        {
+          "depth": 3,
+          "text": "RBAC (Role-Based Access Control)",
+          "slug": "rbac-role-based-access-control"
+        },
+        {
+          "depth": 3,
+          "text": "RTO / RPO",
+          "slug": "rto-rpo"
+        },
+        {
+          "depth": 2,
+          "text": "S",
+          "slug": "s"
+        },
+        {
+          "depth": 3,
+          "text": "Saga Pattern",
+          "slug": "saga-pattern"
+        },
+        {
+          "depth": 3,
+          "text": "Scale Set",
+          "slug": "scale-set"
+        },
+        {
+          "depth": 3,
+          "text": "Service Principal",
+          "slug": "service-principal"
+        },
+        {
+          "depth": 3,
+          "text": "Sharding",
+          "slug": "sharding"
+        },
+        {
+          "depth": 3,
+          "text": "Shutdown (Graceful)",
+          "slug": "shutdown-graceful"
+        },
+        {
+          "depth": 3,
+          "text": "SLA (Service Level Agreement)",
+          "slug": "sla-service-level-agreement"
+        },
+        {
+          "depth": 3,
+          "text": "SNAT (Source Network Address Translation)",
+          "slug": "snat-source-network-address-translation"
+        },
+        {
+          "depth": 3,
+          "text": "Stateful vs Stateless",
+          "slug": "stateful-vs-stateless"
+        },
+        {
+          "depth": 3,
+          "text": "Static Web App",
+          "slug": "static-web-app"
+        },
+        {
+          "depth": 3,
+          "text": "Sticky Session (Session Affinity)",
+          "slug": "sticky-session-session-affinity"
+        },
+        {
+          "depth": 3,
+          "text": "Strangler Fig",
+          "slug": "strangler-fig"
+        },
+        {
+          "depth": 2,
+          "text": "T",
+          "slug": "t"
+        },
+        {
+          "depth": 3,
+          "text": "Throttling",
+          "slug": "throttling"
+        },
+        {
+          "depth": 3,
+          "text": "Throughput",
+          "slug": "throughput"
+        },
+        {
+          "depth": 3,
+          "text": "Timeout",
+          "slug": "timeout"
+        },
+        {
+          "depth": 3,
+          "text": "TLS/SSL Termination",
+          "slug": "tls-ssl-termination"
+        },
+        {
+          "depth": 3,
+          "text": "Traffic Manager",
+          "slug": "traffic-manager"
+        },
+        {
+          "depth": 2,
+          "text": "U",
+          "slug": "u"
+        },
+        {
+          "depth": 3,
+          "text": "Update Domain",
+          "slug": "update-domain"
+        },
+        {
+          "depth": 3,
+          "text": "Unit Testing (Cloud)",
+          "slug": "unit-testing-cloud"
+        },
+        {
+          "depth": 2,
+          "text": "V",
+          "slug": "v"
+        },
+        {
+          "depth": 3,
+          "text": "Vertical Scaling (Scaling Up)",
+          "slug": "vertical-scaling-scaling-up"
+        },
+        {
+          "depth": 3,
+          "text": "Virtual Network (VNet)",
+          "slug": "virtual-network-vnet"
+        },
+        {
+          "depth": 3,
+          "text": "Virtual WAN",
+          "slug": "virtual-wan"
+        },
+        {
+          "depth": 2,
+          "text": "W",
+          "slug": "w"
+        },
+        {
+          "depth": 3,
+          "text": "Web Application Firewall (WAF)",
+          "slug": "web-application-firewall-waf"
+        },
+        {
+          "depth": 3,
+          "text": "Well-Architected Framework",
+          "slug": "well-architected-framework"
+        },
+        {
+          "depth": 3,
+          "text": "Workload",
+          "slug": "workload"
+        },
+        {
+          "depth": 2,
+          "text": "Z",
+          "slug": "z"
+        },
+        {
+          "depth": 3,
+          "text": "Zero Trust",
+          "slug": "zero-trust"
+        },
+        {
+          "depth": 3,
+          "text": "Zone-Redundant",
+          "slug": "zone-redundant"
+        },
+        {
+          "depth": 2,
+          "text": "Contribution",
+          "slug": "contribution"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/glossary/README.md",
+      "relativePath": "glossary/README.md",
+      "slug": "sources/azure-knowledge/glossary",
+      "href": "/docs/sources/azure-knowledge/glossary/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "glossary",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Core Azure Concepts",
+      "description": "Foundational knowledge every Azure practitioner needs.",
+      "content": "Core Azure Concepts Foundational knowledge every Azure practitioner needs. Topics Azure Regions and Availability Zones regions and azs.md — geography, paired regions, zone redundant services Resource Hierarchy resource hierarchy.md — management groups, subscriptions, resource groups, resources Azure Resource Manager azure resource manager.md — ARM, Bicep, declarative deployments, idempotency Identity and Access Management identity and access.md — Entra ID, service principals, managed identities, RBAC Governance and Policy governance.md — Azure Policy, Blueprints, Management Groups, tagging strategy Subscriptions and Tenants subscriptions and tenants.md — tenant structure, EA/MCA, management group hierarchy, subscription limits Azure Architecture Framework azure well architected.md — the five pillars: reliability, security, cost optimization, operational excellence, performance efficiency Quick reference Concept Summary Region Geographic area containing one or more datacenters Availability Zone Unique physical location within a region 1+ datacenters Resource Group Logical container for related Azure resources Subscription Billing and access control boundary Management Group Hierarchical container for managing access, policy, and compliance Entra ID Microsoft's cloud identity and access management service Service Principal Identity for applications to access Azure resources Managed Identity Automatically managed Azure AD identity for Azure services",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Topics",
+          "slug": "topics"
+        },
+        {
+          "depth": 2,
+          "text": "Quick reference",
+          "slug": "quick-reference"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/concepts/README.md",
+      "relativePath": "concepts/README.md",
+      "slug": "sources/azure-knowledge/concepts",
+      "href": "/docs/sources/azure-knowledge/concepts/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "concepts",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Architecture Patterns",
+      "description": "Reference architectures, design patterns, and best practices organized by",
+      "content": "Azure Architecture Patterns Reference architectures, design patterns, and best practices organized by common workload scenarios. Contents Landing Zones landing zones.md — enterprise scale foundation for Azure adoption Microservices on AKS microservices aks.md — containerized microservices architecture Serverless Backend serverless backend.md — event driven serverless APIs Data Platform data platform.md — analytics, data lakes, warehousing Hybrid and Multi cloud hybrid multi cloud.md — connecting on premises and other clouds Disaster Recovery disaster recovery.md — DR strategies and replication patterns Identity Architecture identity architecture.md — Entra ID design for enterprises Network Topologies network topologies.md — hub spoke, mesh, hybrid networking Architecture decision records ADRs Each pattern includes ADRs covering: Context and drivers Options considered Decision and rationale Trade offs and consequences",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Contents",
+          "slug": "contents"
+        },
+        {
+          "depth": 2,
+          "text": "Architecture decision records (ADRs)",
+          "slug": "architecture-decision-records-adrs"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/architecture/README.md",
+      "relativePath": "architecture/README.md",
+      "slug": "sources/azure-knowledge/architecture",
+      "href": "/docs/sources/azure-knowledge/architecture/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "architecture",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Knowledge Base",
+      "description": "| Level | Path | Topics |",
+      "content": "Azure Knowledge Base Your personal learning path through Azure cloud services, from fundamentals to solutions architect level patterns, with visual diagrams and a system design glossary. How to navigate Concepts concepts/ — core Azure concepts: regions, resource groups, subscriptions, identity, governance Architecture architecture/ — Well Architected Framework, landing zones, reference architectures, design patterns Guides guides/ — step by step learning paths and hands on walkthroughs Services services/ — deep dives into Azure service categories Glossary glossary/ — system design terms mapped to Azure services Learning paths Level Path Topics 🟢 Beginner Azure Fundamentals Core concepts, basic services, portal navigation 🟡 Intermediate Solutions Architect Architecture patterns, networking, security, cost management 🔴 Advanced Specialized Domains AI/ML, Kubernetes, data engineering, DevOps ⚪ Reference System Design Cloud native patterns, distributed systems, scalability Service categories Category Key Services Compute VMs, App Service, Azure Functions, AKS, Container Instances, Batch Networking VNet, Load Balancer, Application Gateway, Traffic Manager, DNS, CDN, VPN Gateway, ExpressRoute Storage Blob, Disk, Files, Queue, Table, NetApp Files Databases SQL Database, Cosmos DB, PostgreSQL, MySQL, Cache for Redis, Database for MariaDB AI + ML OpenAI Service, Cognitive Services, Machine Learning, Bot Service, Search Security Entra ID Azure AD , Key Vault, Defender for Cloud, Sentinel, Policy, RBAC DevOps DevOps Services, Pipelines, Boards, Artifacts, Repos Integration Logic Apps, Service Bus, Event Grid, Event Hubs, API Management, Functions Management Monitor, Log Analytics, Automation, Backup, Site Recovery, Cost Management Migration Azure Migrate, Data Box, Database Migration Service, Site Recovery",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "How to navigate",
+          "slug": "how-to-navigate"
+        },
+        {
+          "depth": 2,
+          "text": "Learning paths",
+          "slug": "learning-paths"
+        },
+        {
+          "depth": 2,
+          "text": "Service categories",
+          "slug": "service-categories"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/README.md",
+      "relativePath": "README.md",
+      "slug": "sources/azure-knowledge",
+      "href": "/docs/sources/azure-knowledge/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "overview",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Well-Architected Framework",
+      "description": "The Microsoft Azure Well-Architected Framework is a set of guiding tenets that",
+      "content": "Azure Well Architected Framework Overview The Microsoft Azure Well Architected Framework is a set of guiding tenets that help you build high quality, reliable, and secure cloud workloads. It consists of five pillars of architectural excellence and the Azure Well Architected Review assessment. The five pillars 1. Reliability The ability of a system to recover from failures and continue to function. Pattern Azure Service Description Availability Zones VMs, AKS, SQL DB Distribute across physically separate zones Geo redundancy Cosmos DB, SQL DB, Storage Replicate across paired regions Load balancing Front Door, Traffic Manager, ALB Distribute traffic and failover Circuit breaker App Service + Health checks Stop sending requests to failing instances Bulkhead AKS node pools Isolate workloads to limit blast radius 2. Security Protecting applications and data from threats. Capability Azure Service Identity Entra ID, Managed Identities, Conditional Access Secrets Key Vault Network security NSG, ASG, Azure Firewall, WAF Threat detection Defender for Cloud, Sentinel Data encryption Storage Service Encryption, SQL TDE, Always Encrypted 3. Cost Optimization Managing and reducing costs without sacrificing performance. Strategy Azure Tool Right sizing Azure Advisor Reserved capacity Reserved Instances, Savings Plans Autoscaling VMSS, App Service Autoscale Governance Azure Policy, Budgets, Cost Management 4. Operational Excellence Operations processes that keep a system running in production. Practice Azure Tooling Infrastructure as Code Bicep, ARM, Terraform CI/CD Azure DevOps, GitHub Actions Monitoring Azure Monitor, Application Insights Incident response Azure Monitor Alerts, Automation Runbooks 5. Performance Efficiency The ability to adapt to changes in load. Pattern Azure Service Horizontal scaling VMSS, AKS, App Service Caching Azure Cache for Redis, CDN, Front Door Data partitioning Cosmos DB partitions, SQL sharding Content delivery Azure CDN, Front Door Azure Well Architected Review A systematic evaluation of your workload against the five pillars: 1. Assess — answer the Well Architected Review questionnaire 2. Identify — find high priority recommendations 3. Remediate — apply the recommended improvements 4. Track — monitor progress over time The review is available through: Azure Well Architected Review https://learn.microsoft.com/en us/assessments/?mode=assessment&assessment=azure well architected&id=azure well architected — self service assessment Azure Advisor — personalized recommendations Microsoft Partner led — paid assessments Related terms Regions and Availability Zones regions and azs.md Azure Resource Manager azure resource manager.md Glossary: CAP Theorem ../glossary/README.md cap theorem Glossary: SLA ../glossary/README.md sla",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Overview",
+          "slug": "overview"
+        },
+        {
+          "depth": 2,
+          "text": "The five pillars",
+          "slug": "the-five-pillars"
+        },
+        {
+          "depth": 3,
+          "text": "1. Reliability",
+          "slug": "1-reliability"
+        },
+        {
+          "depth": 3,
+          "text": "2. Security",
+          "slug": "2-security"
+        },
+        {
+          "depth": 3,
+          "text": "3. Cost Optimization",
+          "slug": "3-cost-optimization"
+        },
+        {
+          "depth": 3,
+          "text": "4. Operational Excellence",
+          "slug": "4-operational-excellence"
+        },
+        {
+          "depth": 3,
+          "text": "5. Performance Efficiency",
+          "slug": "5-performance-efficiency"
+        },
+        {
+          "depth": 2,
+          "text": "Azure Well-Architected Review",
+          "slug": "azure-well-architected-review"
+        },
+        {
+          "depth": 2,
+          "text": "Related terms",
+          "slug": "related-terms"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/concepts/azure-well-architected.md",
+      "relativePath": "concepts/azure-well-architected.md",
+      "slug": "sources/azure-knowledge/concepts/azure-well-architected",
+      "href": "/docs/sources/azure-knowledge/concepts/azure-well-architected/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "concepts",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Regions and Availability Zones",
+      "description": "Azure Regions are geographic areas that contain one or more datacenters connected",
+      "content": "Azure Regions and Availability Zones What it is Azure Regions are geographic areas that contain one or more datacenters connected through a dedicated regional low latency network. Availability Zones AZs are physically separate locations within an Azure region, each with independent power, cooling, and networking. Key facts 160+ Azure Regions worldwide most of any cloud provider 3 Availability Zones per supported region minimum Paired regions for geo redundancy e.g., East US × West US Region pairs are at least 300 miles apart in the US Some services are zone redundant by default AKS, Cosmos DB Some services require explicit zone configuration VMs, managed disks Service categories by availability Category Behavior Examples Zonal Deployed to a specific zone, survive other zones VMs, Disks, IP addresses Zone redundant Replicated across zones automatically Cosmos DB, Event Hubs, AKS Regional No zone awareness, survives region level failure App Service, Functions, SQL Database Global Spans multiple regions globally Traffic Manager, Front Door, DNS Diagram: Multi region active active architecture Choosing regions 1. Proximity to users — lowest latency for your audience 2. Service availability — not all services are in all regions 3. Zone support — some regions have 3 AZs, some have none 4. Compliance and data residency — sovereign regions, data boundaries 5. Cost — pricing varies by region Related terms Resource Hierarchy resource hierarchy.md Azure Resource Manager azure resource manager.md Glossary: Geo redundancy ../glossary/README.md geo redundancy",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "What it is",
+          "slug": "what-it-is"
+        },
+        {
+          "depth": 2,
+          "text": "Key facts",
+          "slug": "key-facts"
+        },
+        {
+          "depth": 2,
+          "text": "Service categories by availability",
+          "slug": "service-categories-by-availability"
+        },
+        {
+          "depth": 2,
+          "text": "Diagram: Multi-region active-active architecture",
+          "slug": "diagram-multi-region-active-active-architecture"
+        },
+        {
+          "depth": 2,
+          "text": "Choosing regions",
+          "slug": "choosing-regions"
+        },
+        {
+          "depth": 2,
+          "text": "Related terms",
+          "slug": "related-terms"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/concepts/regions-and-azs.md",
+      "relativePath": "concepts/regions-and-azs.md",
+      "slug": "sources/azure-knowledge/concepts/regions-and-azs",
+      "href": "/docs/sources/azure-knowledge/concepts/regions-and-azs/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "concepts",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Deployment Guide: Extract Text from Objects",
+      "description": "---",
+      "content": "Deployment Guide: Extract Text from Objects Companion deployment document for the Extract Text from Objects ../services/ai ml/extract object text.md architecture. Use this guide to provision, configure, and validate the full solution. Table of Contents 1. Resource Provisioning resource provisioning 2. Azure Function Deployment azure function deployment 3. AI Builder Model Training ai builder model training 4. Power Automate Flow Configuration power automate flow configuration 5. SharePoint Configuration sharepoint configuration 6. PnP Modern Search Setup pnp modern search setup 7. Validation validation 8. Runbook runbook Resource Provisioning Azure Resources Bicep Deploy with Azure CLI Azure Function Deployment Local Setup Test Locally Publish to Azure AI Builder Model Training Data Preparation 1. Collect images : Gather 50 100 images per object type you want to detect 2. Annotate : Use Azure AI Custom Vision https://www.customvision.ai/ or the AI Builder labeling interface 3. Format : Supported formats: PNG, JPEG, BMP, GIF non animated 4. Quality guidelines : Minimum resolution: 320×320 pixels Maximum resolution: 8000×8000 pixels Objects should occupy at least 5% of the image area Training Steps Testing the Model Power Automate Flow Configuration Flow Overview Detailed Action Configuration Trigger: When a file is created in a folder Field Value Site Address https://{tenant}.sharepoint.com/sites/Engineering Folder ID /Shared Documents/Schematics Action 1: Condition file type filter Action 2: Apply AI Builder model in the \"Yes\" branch Field Value Operation Predict Model Your published object detection model Image File content from trigger Action 3: Submit to Document Intelligence Action 4: Parse Operation Location header Action 5: Delay Action 6: Poll OCR Result Action 7: Condition check status If no → Go back to Delay Action 5 , max 10 retries Action 8: Call Geometry Function Action 9: Update file metadata SharePoint Configuration Create Metadata Columns Enable Metadata for Search 1. Go to SharePoint Admin Center → Search → Managed Properties 2. Verify that ExtractedText and ObjectTypes are mapped to crawled properties 3. If not visible, trigger a full crawl: PnP Modern Search Setup Installation Configuration 1. Edit a SharePoint page → add Search Box web part 2. Add Search Results web part below it 3. Configure Search Results: Validation Test Matrix Test Case Input Expected Result Pass Criteria Basic extraction Image with one object containing text Text matched to object ExtractedText populated in SharePoint Multiple objects Image with 3+ objects Each object has correct text ObjectTypes shows all types No objects Image with no detectable objects Empty result, no metadata written Flow completes, no metadata update Unsupported file .pdf, .docx Flow exits without processing Condition skips, flow shows \"Skipped\" Large image 4000×4000 px Document processed within 60s Flow completes < 90s Validation Script Runbook Daily Operations Incident Response Incident Symptoms Response Flow failures Run history shows failed Check error message. Common: Document Intelligence key expired, function key rotated No metadata written Flow succeeds but metadata empty Check Function logs in Application Insights. Test function directly with curl Poor detection accuracy Wrong objects detected Retrain AI Builder model with more annotated images Throttling HTTP 429 errors Reduce concurrency in Power Automate, request quota increase for Document Intelligence Search not returning results Metadata exists but search empty Trigger full crawl in SharePoint Admin Center Monthly Maintenance Review AI Builder model accuracy metrics Rotate Document Intelligence keys if not using managed identity Check Power Automate license consumption Review Application Insights for performance trends Update document library metadata schema if needed Quarterly Retrain AI Builder model with new document samples Review and update the Well Architected review Cost optimization review right size Document Intelligence tier Security audit managed identity usage, Key Vault access Troubleshooting Common Issues Issue Root Cause Resolution 403 Forbidden from Document Intelligence Key expired or wrong region Regenerate key in Azure Portal, update Power Automate connection 429 Too Many Requests Exceeded Document Intelligence TPS limit Add retry policy with exponential backoff in Power Automate Function returns 500 Invalid input format Check that objects and ocrResult have expected JSON structure Metadata not searchable SharePoint hasn't crawled yet Trigger full crawl or wait 15 30 minutes for incremental crawl AI Builder model returns empty Model not published or wrong input format Verify model is published, check image format is supported Logs and Diagnostics",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Table of Contents",
+          "slug": "table-of-contents"
+        },
+        {
+          "depth": 2,
+          "text": "Resource Provisioning",
+          "slug": "resource-provisioning"
+        },
+        {
+          "depth": 3,
+          "text": "Azure Resources (Bicep)",
+          "slug": "azure-resources-bicep"
+        },
+        {
+          "depth": 3,
+          "text": "Deploy with Azure CLI",
+          "slug": "deploy-with-azure-cli"
+        },
+        {
+          "depth": 2,
+          "text": "Azure Function Deployment",
+          "slug": "azure-function-deployment"
+        },
+        {
+          "depth": 3,
+          "text": "Local Setup",
+          "slug": "local-setup"
+        },
+        {
+          "depth": 3,
+          "text": "Test Locally",
+          "slug": "test-locally"
+        },
+        {
+          "depth": 3,
+          "text": "Publish to Azure",
+          "slug": "publish-to-azure"
+        },
+        {
+          "depth": 2,
+          "text": "AI Builder Model Training",
+          "slug": "ai-builder-model-training"
+        },
+        {
+          "depth": 3,
+          "text": "Data Preparation",
+          "slug": "data-preparation"
+        },
+        {
+          "depth": 3,
+          "text": "Training Steps",
+          "slug": "training-steps"
+        },
+        {
+          "depth": 3,
+          "text": "Testing the Model",
+          "slug": "testing-the-model"
+        },
+        {
+          "depth": 2,
+          "text": "Power Automate Flow Configuration",
+          "slug": "power-automate-flow-configuration"
+        },
+        {
+          "depth": 3,
+          "text": "Flow Overview",
+          "slug": "flow-overview"
+        },
+        {
+          "depth": 3,
+          "text": "Detailed Action Configuration",
+          "slug": "detailed-action-configuration"
+        },
+        {
+          "depth": 2,
+          "text": "SharePoint Configuration",
+          "slug": "sharepoint-configuration"
+        },
+        {
+          "depth": 3,
+          "text": "Create Metadata Columns",
+          "slug": "create-metadata-columns"
+        },
+        {
+          "depth": 3,
+          "text": "Enable Metadata for Search",
+          "slug": "enable-metadata-for-search"
+        },
+        {
+          "depth": 2,
+          "text": "PnP Modern Search Setup",
+          "slug": "pnp-modern-search-setup"
+        },
+        {
+          "depth": 3,
+          "text": "Installation",
+          "slug": "installation"
+        },
+        {
+          "depth": 3,
+          "text": "Configuration",
+          "slug": "configuration"
+        },
+        {
+          "depth": 2,
+          "text": "Validation",
+          "slug": "validation"
+        },
+        {
+          "depth": 3,
+          "text": "Test Matrix",
+          "slug": "test-matrix"
+        },
+        {
+          "depth": 3,
+          "text": "Validation Script",
+          "slug": "validation-script"
+        },
+        {
+          "depth": 2,
+          "text": "Runbook",
+          "slug": "runbook"
+        },
+        {
+          "depth": 3,
+          "text": "Daily Operations",
+          "slug": "daily-operations"
+        },
+        {
+          "depth": 3,
+          "text": "Incident Response",
+          "slug": "incident-response"
+        },
+        {
+          "depth": 3,
+          "text": "Monthly Maintenance",
+          "slug": "monthly-maintenance"
+        },
+        {
+          "depth": 3,
+          "text": "Quarterly",
+          "slug": "quarterly"
+        },
+        {
+          "depth": 2,
+          "text": "Troubleshooting",
+          "slug": "troubleshooting"
+        },
+        {
+          "depth": 3,
+          "text": "Common Issues",
+          "slug": "common-issues"
+        },
+        {
+          "depth": 3,
+          "text": "Logs and Diagnostics",
+          "slug": "logs-and-diagnostics"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/architecture/extract-object-text-deployment.md",
+      "relativePath": "architecture/extract-object-text-deployment.md",
+      "slug": "sources/azure-knowledge/architecture/extract-object-text-deployment",
+      "href": "/docs/sources/azure-knowledge/architecture/extract-object-text-deployment/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "architecture",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Landing Zones",
+      "description": "An Azure Landing Zone is the foundation infrastructure for cloud adoption at",
+      "content": "Azure Landing Zones What it is An Azure Landing Zone is the foundation infrastructure for cloud adoption at scale — the subscription architecture, governance, networking, identity, and security baseline that every workload deploys onto. Architecture components Layer Azure Service Purpose Identity Entra ID, PIM, Conditional Access Centralized identity and access Connectivity Hub VNet, Azure Firewall, ExpressRoute, VPN Network hub for all landing zones Management Log Analytics, Automation Account, Backup Vault Monitoring, patching, backup Governance Azure Policy, RBAC, Blueprints, Defender Guardrails and compliance Enterprise scale landing zone Deployment options Approach Tooling When to use Azure Portal Quick Start Portal wizard First time, simple setup ARM/Bicep templates Infrastructure as Code Customization needed Terraform modules HashiCorp Terraform Multi cloud existing TF Azure CLI / PowerShell Scripted automation Automated pipelines Decision: Hub spoke vs. Virtual WAN Factor Hub spoke Virtual WAN Complexity Moderate Higher managed Control Full control over hub Microsoft managed Scale 100s of spokes 1000s of spokes Global routing Manual Automatic Cost Predictable Higher at small scale Related terms Network Topologies network topologies.md Identity Architecture identity architecture.md Azure Policy and Governance ../../docs/concepts/governance.md Glossary: Hub spoke ../../docs/glossary/README.md hub spoke",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "What it is",
+          "slug": "what-it-is"
+        },
+        {
+          "depth": 2,
+          "text": "Architecture components",
+          "slug": "architecture-components"
+        },
+        {
+          "depth": 2,
+          "text": "Enterprise-scale landing zone",
+          "slug": "enterprise-scale-landing-zone"
+        },
+        {
+          "depth": 2,
+          "text": "Deployment options",
+          "slug": "deployment-options"
+        },
+        {
+          "depth": 2,
+          "text": "Decision: Hub-spoke vs. Virtual WAN",
+          "slug": "decision-hub-spoke-vs-virtual-wan"
+        },
+        {
+          "depth": 2,
+          "text": "Related terms",
+          "slug": "related-terms"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/architecture/landing-zones.md",
+      "relativePath": "architecture/landing-zones.md",
+      "slug": "sources/azure-knowledge/architecture/landing-zones",
+      "href": "/docs/sources/azure-knowledge/architecture/landing-zones/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "architecture",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Extract Text from Objects Using AI Builder and Document Intelligence",
+      "description": "---",
+      "content": "Extract Text from Objects Using AI Builder and Document Intelligence Production ready architecture guide Turn scanned engineering schematics, industrial diagrams, and architectural drawings into searchable documents by extracting text embedded inside specific objects. Table of Contents 1. Overview overview 2. Architecture architecture 3. Visual Flow Diagram visual flow diagram 4. Component Breakdown component breakdown 5. Prerequisites prerequisites 6. Step by Step Implementation step by step implementation 7. Code: Azure Function for Geometry Matching code azure function for geometry matching 8. Deployment Guide deployment guide 9. Well Architected Considerations well architected considerations 10. Cost Estimation cost estimation 11. Alternatives alternatives 12. Next Steps next steps Overview Problem Engineering schematics, industrial diagrams, and architectural drawings contain critical text — part numbers, valve labels, room codes — embedded inside visual objects boxes, callouts, symbols . Standard OCR extracts all text from a document but cannot tell you which text belongs to which object. Manual scanning is slow and error prone. Solution Combine AI Builder object detection with Azure Document Intelligence OCR and a geometry matching Azure Function . The pipeline: 1. Detects objects of interest in an image AI Builder 2. Extracts all text with pixel coordinates Document Intelligence 3. Matches text to the object it falls inside Azure Function 4. Writes matched metadata back to the source document 5. Makes it searchable via Microsoft Search Use Cases Domain Example Value Engineering Find every part number in a PCB schematic Part shortage analysis, recall tracking Industrial Locate all pressure valves in a plant diagram Preventive maintenance, hazard isolation Architecture Search for room codes across a floor plan set Asset location, space management Facilities Identify HVAC equipment labels in building drawings Maintenance scheduling Architecture Data Flow Visual Flow Diagram High Level Process Geometry Intersection Logic Intersection Test Visual Component Breakdown Microsoft Power Platform Component Role Details AI Builder Object detection Train a custom model to recognize objects valves, callouts, component boxes . Returns JSON with bounding box coordinates. Power Automate Orchestration Triggered by file upload, coordinates calls to AI Builder, Document Intelligence, and Azure Function. Writes results back to SharePoint metadata. Azure Service Role SKU / Plan Details Document Intelligence Full page OCR S0 tier pay per page Extracts all text with pixel coordinates. Use Read OCR API for printed text. Azure Functions Geometry matching Consumption plan HTTP triggered function that compares bounding boxes and returns intersecting text. Microsoft 365 Component Role SharePoint / OneDrive Document source and metadata target Microsoft Teams Alternative upload channel Microsoft Search Indexes extracted metadata for cross M365 search PnP Modern Search Open source SharePoint web parts for custom search UX Prerequisites Azure Subscription An active Azure subscription Contributor access to create: Azure Document Intelligence resource Azure Function App Consumption plan Application Insights optional but recommended Power Platform Power Automate Premium license per user or per flow AI Builder credits or add on capacity Power Platform environment with Dataverse enabled Microsoft 365 SharePoint Online with document libraries Microsoft Search enabled Permissions to create/manage SharePoint metadata columns Development Tools Node.js 18+ https://nodejs.org/ or .NET 8 SDK https://dotnet.microsoft.com/download for Azure Function Azure Functions Core Tools https://learn.microsoft.com/en us/azure/azure functions/functions run local Azure CLI https://learn.microsoft.com/en us/cli/azure/install azure cli Power Platform CLI https://learn.microsoft.com/en us/power platform/developer/cli/introduction for ALM Step by Step Implementation Step 1: Train the AI Builder Object Detection Model 1. Sign in to Power Apps https://make.powerapps.com and navigate to your environment. 2. Go to AI Builder → Models → Build a model . 3. Choose Object Detection as the model type. 4. Upload training images that contain the objects you want to detect. 5. Draw bounding boxes around each object in your training images: Tag each object type e.g., valve, callout, component, revision block Provide at least 15 images per tag for good accuracy 6. Train the model and review the performance metrics. 7. Publish the model. Best Practice: Use at least 50 images per tag for production quality. Include variations in scale, rotation, and lighting. Review the precision/recall scores and retrain if below 80%. Step 2: Create the Azure Document Intelligence Resource Step 3: Deploy the Geometry Matching Azure Function See the Code: Azure Function for Geometry Matching code azure function for geometry matching section below for the full implementation. Step 4: Build the Power Automate Flow Create a new Automated cloud flow with the SharePoint trigger: Trigger: When a file is created in a folder SharePoint Action 1: Apply AI Builder object detection model Action 2: Call Document Intelligence OCR Action 3: Poll for OCR result after delay Action 4: Call geometry matching Azure Function Action 5: Write metadata back to SharePoint Step 5: Configure SharePoint Metadata Columns 1. Navigate to your SharePoint document library. 2. Add the following site columns or library columns : Column Name Type Description ExtractedText Multiple lines of text All matched text concatenated ObjectTypes Choice multi select Types of objects detected ProcessingDate Date/Time When the document was processed ProcessingStatus Choice Pending, Processing, Completed, Failed 3. Ensure these columns are indexed for search: Go to Library Settings → Indexed Columns Add ExtractedText and ObjectTypes Step 6: Configure PnP Modern Search Web Parts 1. Install PnP Modern Search https://microsoft search.github.io/pnp modern search/ solution in your SharePoint tenant. 2. Add the Search Box and Search Results web parts to a SharePoint page. 3. Configure the Search Results web part to include custom refiners: Refiner: ObjectTypes choice Refiner: ProcessingDate date range 4. Create a Search Vertical for \"Object Search\": Scope: specific document libraries Result types: documents with ExtractedText populated Code: Azure Function for Geometry Matching This is the core intersection logic that matches OCR text to detected objects. Node.js TypeScript Implementation package.json tsconfig.json Unit Tests Deployment Guide Deployment Architecture Prerequisites Checklist Azure subscription with Contributor access Power Automate Premium license AI Builder credits provisioned SharePoint Online site with document library Azure CLI installed az version Azure Functions Core Tools installed func version Node.js 18+ or .NET 8 SDK installed Azure Resource Deployment Deploy all Azure resources using a Bicep template for repeatability: CI/CD Pipeline GitHub Actions Power Platform ALM 1. Create a Power Platform Solution : In Power Apps, navigate to Solutions → New Solution Add: AI Builder model, Power Automate flow, custom connectors Export as managed solution 2. Environment Strategy : Environment Purpose Data Dev Build and test Sample diagrams Test UAT validation Real documents copy Prod Production Real documents 3. Promote via Pipelines : Use Power Platform Pipelines https://learn.microsoft.com/en us/power platform/alm/pipelines Or deploy solutions manually through the admin center Post Deployment Validation After deployment, verify the pipeline with a test document: 1. Upload a test image containing objects with embedded text 2. Check Power Automate run history → should show \"Succeeded\" 3. Verify Azure Function logs in Application Insights 4. Check SharePoint document metadata → ExtractedText should be populated 5. Search for extracted text in SharePoint → should return the document Well Architected Considerations Reliability Consideration Implementation Transient failures Configure retry with exponential backoff on Document Intelligence HTTP action in Power Automate max 3 retries, 5s interval Idempotency Use SharePoint file ID as key; upsert metadata rather than append. Check ProcessingStatus before processing Long running OCR Document Intelligence is async: submit → poll for result. Set a 5 minute timeout in Power Automate SLA targets Document Intelligence 99.9%, Functions 99.95%, Power Automate 99.9% Security Consideration Implementation Managed identity Configure Azure Function with system assigned managed identity. Use Entra ID auth for Document Intelligence Secrets Store Document Intelligence key in Key Vault if Power Automate needs it. Use Key Vault connector to retrieve at runtime Document permissions SharePoint metadata inherits document permissions automatically Sensitive content OCR output may capture PII. Review your data classification policy before enabling broad scanning Cost Optimization Item Monthly Cost est. Document Intelligence S0 ~$1.50 per 1,000 pages Azure Functions Consumption ~$0 first 1M requests free Power Automate Premium ~$15/user/month or ~$500/flow/month AI Builder credits ~$500/1M API calls varies by plan Cost saving tips: Use Power Automate conditions to skip non image files Downsample oversized images before processing to reduce Document Intelligence page count Start with the Document Intelligence F0 tier free, 500 pages/month for development Monitor AI Builder credit consumption in Power Platform admin center Performance Efficiency Consideration Implementation Service limits Document Intelligence: 15 TPS S0 . AI Builder: varies by model type Parallel processing Power Automate triggers run concurrently by default — cap parallelism to stay within limits Image preprocessing Normalize orientation, crop whitespace, downsample images 4K px before sending Cold starts Use Azure Functions Premium plan if <1s latency is required; Consumption plan has ~3 5s cold start High throughput Consider Logic Apps Standard for 100K documents/day Operational Excellence Practice Implementation ALM Package flow + AI Builder model in Power Platform Solution Source control Store Azure Function in GitHub/Azure DevOps with CI/CD Monitoring Application Insights Function , Power Platform admin center Flows , Azure Monitor Document Intelligence Model retraining Establish quarterly retraining cadence for AI Builder model. Track precision/recall drift Metadata schema versioning Version the metadata column schema so existing documents remain valid after schema changes Cost Estimation Azure Services per month Service SKU Estimated Cost Document Intelligence S0 $0.0015/page $15.00 10,000 pages Azure Functions Consumption 1M exec $0.00 within free grant Application Insights Pay as you go ~$2.00 1 GB data Storage Account LRS standard ~$1.00 Total Azure ~$18.00/month Power Platform Item Cost Power Automate Premium per user $15/user/month Power Automate Process per flow $500/flow/month AI Builder credits Included in Premium plans or add on Use the preconfigured Azure pricing estimate https://azure.com/e/97bc706f51b14769bc69f9084af3e2e8 for a detailed breakdown. Alternatives Alternative When to Use Trade offs Document Intelligence alone Don't need to scope OCR to specific objects Simpler setup but no object level filtering Azure Content Understanding Need LLM reasoning over documents e.g., summarize revision notes, classify diagrams Higher cost, overkill for pure extraction Built in SharePoint OCR Basic text extraction without object filtering No object detection; extracts all text Azure Logic Apps Standard High throughput scenarios 100K docs/day Higher cost, more complex setup Next Steps 1. Train your AI Builder model — this is the most critical step. Start with 30 50 annotated images per object type. 2. Deploy the Azure Function using the provided code and CI/CD pipeline. 3. Build the Power Automate flow following the step by step guide. 4. Configure SharePoint metadata and PnP Modern Search web parts. 5. Test with real documents and iterate on AI Builder model accuracy. 6. Establish monitoring with Application Insights dashboards and Power Platform analytics. Additional Resources What is Azure Document Intelligence? https://learn.microsoft.com/en us/azure/ai services/document intelligence/overview AI Builder in Power Automate https://learn.microsoft.com/en us/ai builder/use in flow overview Document Intelligence custom models https://learn.microsoft.com/en us/azure/ai services/document intelligence/train/custom model PnP Modern Search https://microsoft search.github.io/pnp modern search/ Extract text from objects Power Platform community blog https://community.powerplatform.com/blogs/post/?postid=7e80e9fc 2613 47b1 96f7 c4416624fc52",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Table of Contents",
+          "slug": "table-of-contents"
+        },
+        {
+          "depth": 2,
+          "text": "Overview",
+          "slug": "overview"
+        },
+        {
+          "depth": 3,
+          "text": "Problem",
+          "slug": "problem"
+        },
+        {
+          "depth": 3,
+          "text": "Solution",
+          "slug": "solution"
+        },
+        {
+          "depth": 3,
+          "text": "Use Cases",
+          "slug": "use-cases"
+        },
+        {
+          "depth": 2,
+          "text": "Architecture",
+          "slug": "architecture"
+        },
+        {
+          "depth": 3,
+          "text": "Data Flow",
+          "slug": "data-flow"
+        },
+        {
+          "depth": 2,
+          "text": "Visual Flow Diagram",
+          "slug": "visual-flow-diagram"
+        },
+        {
+          "depth": 3,
+          "text": "High-Level Process",
+          "slug": "high-level-process"
+        },
+        {
+          "depth": 3,
+          "text": "Geometry Intersection Logic",
+          "slug": "geometry-intersection-logic"
+        },
+        {
+          "depth": 3,
+          "text": "Intersection Test (Visual)",
+          "slug": "intersection-test-visual"
+        },
+        {
+          "depth": 2,
+          "text": "Component Breakdown",
+          "slug": "component-breakdown"
+        },
+        {
+          "depth": 3,
+          "text": "Microsoft Power Platform",
+          "slug": "microsoft-power-platform"
+        },
+        {
+          "depth": 3,
+          "text": "Azure",
+          "slug": "azure"
+        },
+        {
+          "depth": 3,
+          "text": "Microsoft 365",
+          "slug": "microsoft-365"
+        },
+        {
+          "depth": 2,
+          "text": "Prerequisites",
+          "slug": "prerequisites"
+        },
+        {
+          "depth": 3,
+          "text": "Azure Subscription",
+          "slug": "azure-subscription"
+        },
+        {
+          "depth": 3,
+          "text": "Power Platform",
+          "slug": "power-platform"
+        },
+        {
+          "depth": 3,
+          "text": "Microsoft 365",
+          "slug": "microsoft-365"
+        },
+        {
+          "depth": 3,
+          "text": "Development Tools",
+          "slug": "development-tools"
+        },
+        {
+          "depth": 2,
+          "text": "Step-by-Step Implementation",
+          "slug": "step-by-step-implementation"
+        },
+        {
+          "depth": 3,
+          "text": "Step 1: Train the AI Builder Object Detection Model",
+          "slug": "step-1-train-the-ai-builder-object-detection-model"
+        },
+        {
+          "depth": 3,
+          "text": "Step 2: Create the Azure Document Intelligence Resource",
+          "slug": "step-2-create-the-azure-document-intelligence-resource"
+        },
+        {
+          "depth": 3,
+          "text": "Step 3: Deploy the Geometry-Matching Azure Function",
+          "slug": "step-3-deploy-the-geometry-matching-azure-function"
+        },
+        {
+          "depth": 3,
+          "text": "Step 4: Build the Power Automate Flow",
+          "slug": "step-4-build-the-power-automate-flow"
+        },
+        {
+          "depth": 3,
+          "text": "Step 5: Configure SharePoint Metadata Columns",
+          "slug": "step-5-configure-sharepoint-metadata-columns"
+        },
+        {
+          "depth": 3,
+          "text": "Step 6: Configure PnP Modern Search Web Parts",
+          "slug": "step-6-configure-pnp-modern-search-web-parts"
+        },
+        {
+          "depth": 2,
+          "text": "Code: Azure Function for Geometry Matching",
+          "slug": "code-azure-function-for-geometry-matching"
+        },
+        {
+          "depth": 3,
+          "text": "Node.js (TypeScript) Implementation",
+          "slug": "node-js-typescript-implementation"
+        },
+        {
+          "depth": 3,
+          "text": "package.json",
+          "slug": "package-json"
+        },
+        {
+          "depth": 3,
+          "text": "tsconfig.json",
+          "slug": "tsconfig-json"
+        },
+        {
+          "depth": 3,
+          "text": "Unit Tests",
+          "slug": "unit-tests"
+        },
+        {
+          "depth": 2,
+          "text": "Deployment Guide",
+          "slug": "deployment-guide"
+        },
+        {
+          "depth": 3,
+          "text": "Deployment Architecture",
+          "slug": "deployment-architecture"
+        },
+        {
+          "depth": 3,
+          "text": "Prerequisites Checklist",
+          "slug": "prerequisites-checklist"
+        },
+        {
+          "depth": 3,
+          "text": "Azure Resource Deployment",
+          "slug": "azure-resource-deployment"
+        },
+        {
+          "depth": 3,
+          "text": "CI/CD Pipeline (GitHub Actions)",
+          "slug": "ci-cd-pipeline-github-actions"
+        },
+        {
+          "depth": 3,
+          "text": "Power Platform ALM",
+          "slug": "power-platform-alm"
+        },
+        {
+          "depth": 3,
+          "text": "Post-Deployment Validation",
+          "slug": "post-deployment-validation"
+        },
+        {
+          "depth": 2,
+          "text": "Well-Architected Considerations",
+          "slug": "well-architected-considerations"
+        },
+        {
+          "depth": 3,
+          "text": "Reliability",
+          "slug": "reliability"
+        },
+        {
+          "depth": 3,
+          "text": "Security",
+          "slug": "security"
+        },
+        {
+          "depth": 3,
+          "text": "Cost Optimization",
+          "slug": "cost-optimization"
+        },
+        {
+          "depth": 3,
+          "text": "Performance Efficiency",
+          "slug": "performance-efficiency"
+        },
+        {
+          "depth": 3,
+          "text": "Operational Excellence",
+          "slug": "operational-excellence"
+        },
+        {
+          "depth": 2,
+          "text": "Cost Estimation",
+          "slug": "cost-estimation"
+        },
+        {
+          "depth": 3,
+          "text": "Azure Services (per month)",
+          "slug": "azure-services-per-month"
+        },
+        {
+          "depth": 3,
+          "text": "Power Platform",
+          "slug": "power-platform"
+        },
+        {
+          "depth": 2,
+          "text": "Alternatives",
+          "slug": "alternatives"
+        },
+        {
+          "depth": 2,
+          "text": "Next Steps",
+          "slug": "next-steps"
+        },
+        {
+          "depth": 3,
+          "text": "Additional Resources",
+          "slug": "additional-resources"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/services/ai-ml/extract-object-text.md",
+      "relativePath": "services/ai-ml/extract-object-text.md",
+      "slug": "sources/azure-knowledge/services/ai-ml/extract-object-text",
+      "href": "/docs/sources/azure-knowledge/services/ai-ml/extract-object-text/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "services",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
+    },
+    {
+      "kind": "source",
+      "title": "Azure Virtual Machines",
+      "description": "Azure VMs provide infrastructure-as-a-service (IaaS) compute capacity. You get",
+      "content": "Azure Virtual Machines What it is Azure VMs provide infrastructure as a service IaaS compute capacity. You get full control over the operating system, software, and configuration while Azure handles the physical hardware, hypervisor, and network fabric. How it works Key concepts Concept Description VM Size CPU, memory, temporary storage e.g., Standard D2s v3 Series Purpose optimized families General, Compute, Memory, GPU, etc. Availability Set Logical grouping across fault/update domains 99.95% SLA Availability Zone Physical separation across datacenters 99.99% SLA Managed Disk Persistent block storage Premium SSD, Standard SSD, Ultra VMSS VM Scale Sets — identical VMs with autoscaling VM series cheat sheet Series Use case CPU/Mem ratio D General Dev/test, small DB, web 1:4 E Memory optimized Large DB, in memory cache, analytics 1:8 F Compute optimized Batch, gaming, CI/CD agents 1:2 NC/ND GPU ML training, rendering, HPC Variable L Storage optimized Big data, SQL/NoSQL, data warehousing 1:4 B Burstable Low usage variable workloads, dev/test 1:4 Step by step: Create a VM SLA and cost Configuration Compute SLA Single VM Premium SSD 99.9% 2+ VMs in Availability Set 99.95% 2+ VMs in Availability Zones 99.99% Cost factors: VM size, OS license, managed disks, data egress, reserved vs pay as you go. Related terms Azure Regions and AZs ../../concepts/regions and azs.md Azure Networking ../../services/networking/README.md Glossary: IaaS ../../glossary/README.md iaas Glossary: SLA ../../glossary/README.md sla",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "What it is",
+          "slug": "what-it-is"
+        },
+        {
+          "depth": 2,
+          "text": "How it works",
+          "slug": "how-it-works"
+        },
+        {
+          "depth": 2,
+          "text": "Key concepts",
+          "slug": "key-concepts"
+        },
+        {
+          "depth": 2,
+          "text": "VM series cheat sheet",
+          "slug": "vm-series-cheat-sheet"
+        },
+        {
+          "depth": 2,
+          "text": "Step-by-step: Create a VM",
+          "slug": "step-by-step-create-a-vm"
+        },
+        {
+          "depth": 2,
+          "text": "SLA and cost",
+          "slug": "sla-and-cost"
+        },
+        {
+          "depth": 2,
+          "text": "Related terms",
+          "slug": "related-terms"
+        }
+      ],
+      "file": ".tmp/aggregated/azure-knowledge/services/compute/virtual-machines.md",
+      "relativePath": "services/compute/virtual-machines.md",
+      "slug": "sources/azure-knowledge/services/compute/virtual-machines",
+      "href": "/docs/sources/azure-knowledge/services/compute/virtual-machines/",
+      "category": "Learning",
+      "sourceId": "azure-knowledge",
+      "sourceName": "Azure Knowledge",
+      "sourceDescription": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+      "section": "services",
+      "repo": "MSP-learn/azure-knowledge",
+      "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+      "defaultBranch": "main",
+      "docsPath": "docs",
+      "tags": [
+        "azure",
+        "cloud",
+        "architecture",
+        "system-design",
+        "learning"
+      ],
+      "updatedAt": "2026-09-13T17:16:45.000Z",
+      "issues": []
     }
   ]
 }

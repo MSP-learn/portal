@@ -30,5 +30,32 @@
     "sourceDir": ".tmp/aggregated/firstmate-docs",
     "publicDir": "public/_sources/firstmate-docs",
     "local": false
+  },
+  {
+    "id": "azure-knowledge",
+    "name": "Azure Knowledge",
+    "description": "Personal knowledge base for learning, researching, and organizing Azure cloud services: step-by-step guides, visual diagrams, architecture patterns, and a system design glossary.\n",
+    "category": "Learning",
+    "tags": [
+      "azure",
+      "cloud",
+      "architecture",
+      "system-design",
+      "learning"
+    ],
+    "navigation": [
+      "concepts",
+      "architecture",
+      "guides",
+      "services",
+      "glossary"
+    ],
+    "repo": "MSP-learn/azure-knowledge",
+    "repoUrl": "https://github.com/MSP-learn/azure-knowledge",
+    "defaultBranch": "main",
+    "docsPath": "docs",
+    "sourceDir": ".tmp/aggregated/azure-knowledge",
+    "publicDir": "public/_sources/azure-knowledge",
+    "local": false
   }
 ]

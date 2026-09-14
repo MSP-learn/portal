@@ -2,5 +2,4 @@ sources:
   - repo: Leonard-Data/firstmate-docs
     defaultBranch: main
   - repo: MSP-learn/azure-knowledge
-    localPath: ../azure
     defaultBranch: main
