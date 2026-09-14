@@ -4,6 +4,7 @@ import path from 'node:path';
 const root = process.cwd();
 const tmpDir = path.join(root, '.tmp');
 const timestampsDir = path.join(tmpDir, 'timestamps');
+const issuesDir = path.join(tmpDir, 'issues');
 const generatedDir = path.join(root, 'src', 'generated');
 const portalDir = path.join(root, 'content', 'portal');
 const sources = JSON.parse(await fs.readFile(path.join(generatedDir, 'sources.json'), 'utf8'));
@@ -23,43 +24,12 @@ for (const source of sources) {
   }
 }
 
-// Fetch GitHub issues per source repo and build a map: sourceId -> label -> issues
-const issuesBySource = {};
-for (const source of sources) {
-  issuesBySource[source.id] = {};
-  try {
-    const apiUrl = `https://api.github.com/repos/${source.repo}/issues?state=all&per_page=100`;
-    const headers = { Accept: 'application/vnd.github.v3+json', 'User-Agent': 'MSP-Portal' };
-    const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '';
-    if (token) headers.Authorization = `token ${token}`;
-    const res = await fetch(apiUrl, { headers });
-    if (res.ok) {
-      const issues = await res.json();
-      for (const issue of issues) {
-        // Find the label that matches page:<source-id>/<slug>
-        const pageLabel = issue.labels.find((l) => l.name && l.name.startsWith(`page:${source.id}/`));
-        if (pageLabel) {
-          const slug = pageLabel.name.slice(`page:${source.id}/`.length);
-          if (!issuesBySource[source.id][slug]) issuesBySource[source.id][slug] = [];
-          issuesBySource[source.id][slug].push({
-            title: issue.title,
-            number: issue.number,
-            state: issue.state,
-            htmlUrl: issue.html_url
-          });
-        }
-      }
-    }
-  } catch {
-    // If the API call fails, skip issues for this source (don't break the build)
-  }
-}
-
 for (const source of sources) {
   const docs = await walkMarkdown(path.join(root, source.sourceDir));
   const pages = [];
   for (const file of docs) pages.push(await buildSourcePage(source, file));
   pages.sort(compareSourcePages(source));
+  await addIssues(source, pages);
   sourceGroups.push({
     id: source.id,
     name: source.name,
@@ -138,9 +108,7 @@ async function buildSourcePage(source, file) {
   if (isReadmePage(relativePath)) slugBits.pop();
   const href = `/docs/${slugBits.join('/')}/`;
   const slug = slugBits.join('/');
-  const pageSlug = relativePath.replace(/\.md$/i, '');
   const updatedAt = (timestampsData[source.id] || {})[relativePath] || null;
-  const issues = (issuesBySource[source.id] || {})[pageSlug] || [];
   return {
     kind: 'source',
     title: getTitle(raw, relativePath),
@@ -162,8 +130,38 @@ async function buildSourcePage(source, file) {
     docsPath: source.docsPath || 'docs',
     tags: source.tags,
     updatedAt,
-    issues
+    issues: []
   };
+}
+
+async function addIssues(source, pages) {
+  await fs.mkdir(issuesDir, { recursive: true });
+  const cached = {};
+  const headers = { Accept: 'application/vnd.github.v3+json', 'User-Agent': 'MSP-Portal' };
+  const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '';
+  // A read-only token is useful for private sources, but is only used at build time.
+  if (token) headers.Authorization = `Bearer ${token}`;
+
+  for (const page of pages) {
+    const pageSlug = page.relativePath.replace(/\.md$/i, '').replace(/\\/g, '/');
+    const label = `page:${source.id}/${pageSlug}`;
+    try {
+      const apiUrl = `https://api.github.com/repos/${source.repo}/issues?labels=${encodeURIComponent(label)}&state=all&per_page=50`;
+      const response = await fetch(apiUrl, { headers });
+      if (!response.ok) continue;
+      const issues = await response.json();
+      page.issues = issues.filter((issue) => !issue.pull_request).map((issue) => ({
+        title: issue.title,
+        number: issue.number,
+        state: issue.state,
+        htmlUrl: issue.html_url
+      }));
+      cached[pageSlug] = page.issues;
+    } catch {
+      // Questions are supplementary content; a GitHub API failure must not fail the build.
+    }
+  }
+  await fs.writeFile(path.join(issuesDir, `${source.id}.json`), JSON.stringify(cached, null, 2));
 }
 
 function compareSourcePages(source) {

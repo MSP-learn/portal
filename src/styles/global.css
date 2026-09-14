@@ -217,6 +217,17 @@ input, textarea, button, select { font: inherit; caret-color: var(--ink); }
 .button--question { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 8px 16px; border: 1px solid var(--accent); border-radius: var(--radius-sm); background: var(--accent); color: var(--accent-strong); text-decoration: none; font-size: 14px; font-weight: 600; margin-top: 12px; }
 .button--question:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: #fff; }
 .button--question span { font-size: 14px; line-height: 1; }
+.question-dialog { width: min(600px, calc(100% - 2 * var(--gutter))); max-width: 600px; border: 0; padding: 0; background: transparent; }
+.question-dialog::backdrop { background: rgba(23, 25, 29, .42); backdrop-filter: blur(5px); }
+.question-dialog__surface { display: grid; gap: 10px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); box-shadow: 0 28px 90px rgba(23, 25, 29, .22); }
+.question-dialog__header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+.question-dialog__header h3 { margin: 0; font-family: var(--font-display); font-size: var(--fs-h3); }
+.question-dialog__surface label { color: var(--ink); font-size: 13px; font-weight: 600; }
+.question-dialog__surface input, .question-dialog__surface textarea { width: 100%; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); padding: 10px 12px; background: var(--paper); color: var(--ink); font: inherit; }
+.question-dialog__surface textarea { resize: vertical; }
+.question-dialog__surface input:focus, .question-dialog__surface textarea:focus { border-color: var(--accent); outline: 2px solid var(--accent-soft); }
+.question-dialog__hint { margin: 2px 0 4px; color: var(--ink-muted); font-size: 13px; }
+.question-dialog__actions { display: flex; justify-content: flex-end; margin-top: 4px; }
 .footer { margin-top: 52px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--ink-muted); font-size: 14px; }
 .search-dialog { width: min(780px, calc(100% - 2 * var(--gutter))); max-width: 780px; border: 0; padding: 0; background: transparent; opacity: 0; transform: translateY(-10px) scale(.985); transition: opacity var(--motion-fast) ease, transform var(--motion-base) var(--ease-out), overlay var(--motion-base) allow-discrete, display var(--motion-base) allow-discrete; }
 .search-dialog[open] { opacity: 1; transform: translateY(0) scale(1); }
