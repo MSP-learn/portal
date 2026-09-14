@@ -3,7 +3,15 @@
 import BaseLayout from './BaseLayout.astro';
 import { withBase } from '../lib/base-path';
 
-const { title, description, sidebar = [], toc = [], repoUrl, currentPath = '/' } = Astro.props;
+const { title, description, sidebar = [], toc = [], repoUrl, currentPath = '/', updatedAt = null, issues = [], kind = 'portal', sourceId = '', repo = '', slug = '' } = Astro.props;
+
+// Format the ISO date for display
+const formattedDate = updatedAt ? new Date(updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : null;
+
+// Build the GitHub issue URL for raising a new question
+const raiseIssueUrl = kind === 'source' && repo
+  ? `https://github.com/${repo}/issues/new?title=Question%20about%3A%20${encodeURIComponent(slug)}&labels=page:${encodeURIComponent(sourceId)}/${encodeURIComponent(slug)}`
+  : null;
 const base = import.meta.env.BASE_URL;
 const hrefFor = (href) => withBase(base, href);
 ---
@@ -84,6 +92,37 @@ const hrefFor = (href) => withBase(base, href);
 
     <main class="content docs-content">
       <slot />
+      {
+        kind === 'source' && (
+          <section class="qa-section">
+            {formattedDate && (
+              <p class="qa-section__updated">Last updated: {formattedDate}</p>
+            )}
+            <h2 class="qa-section__heading">Questions</h2>
+            {raiseIssueUrl && (
+              <a href={raiseIssueUrl} target="_blank" rel="noopener noreferrer" class="button button--question">
+                Raise a question <span aria-hidden="true">↗</span>
+              </a>
+            )}
+            {issues.length > 0 && (
+              <ul class="qa-section__list">
+                {issues.map((issue) => (
+                  <li class="qa-section__item">
+                    <span class={`qa-section__status-dot qa-section__status-dot--${issue.state}`} title={issue.state === 'open' ? 'Open' : 'Closed'}></span>
+                    <a href={issue.htmlUrl} target="_blank" rel="noopener noreferrer" class="qa-section__issue-link">
+                      <span class="qa-section__issue-title">{issue.title}</span>
+                      <span class="qa-section__issue-meta">#{issue.number}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {issues.length === 0 && (
+              <p class="muted">No questions yet. Be the first to ask!</p>
+            )}
+          </section>
+        )
+      }
       <footer class="footer">MSP keeps documentation with its source repository and publishes one searchable library.</footer>
     </main>
 
