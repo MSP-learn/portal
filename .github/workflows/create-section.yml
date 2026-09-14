@@ -46,8 +46,8 @@ jobs:
                 description: pick('Description')
               }).catch((error) => core.warning(error.message));
             }
-          env:
-            MSP_TEMPLATE_REPOSITORY: ${{ vars.MSP_TEMPLATE_REPOSITORY }}
+      env:
+        MSP_TEMPLATE_REPOSITORY: ${{ vars.MSP_TEMPLATE_REPOSITORY }}
       - name: Append source registry entry
         run: |
           python - <<'PY'
