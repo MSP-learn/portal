@@ -3,15 +3,14 @@
 import BaseLayout from './BaseLayout.astro';
 import { withBase } from '../lib/base-path';
 
-const { title, description, sidebar = [], toc = [], repoUrl, currentPath = '/', updatedAt = null, issues = [], kind = 'portal', sourceId = '', repo = '', slug = '' } = Astro.props;
+const { title, description, sidebar = [], toc = [], repoUrl, currentPath = '/', updatedAt = null, issues = [], kind = 'portal', sourceId = '', repo = '', slug = '', pagePath = '' } = Astro.props;
 
 // Format the ISO date for display
 const formattedDate = updatedAt ? new Date(updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : null;
 
-// Build the GitHub issue URL for raising a new question
-const raiseIssueUrl = kind === 'source' && repo
-  ? `https://github.com/${repo}/issues/new?title=Question%20about%3A%20${encodeURIComponent(slug)}&labels=page:${encodeURIComponent(sourceId)}/${encodeURIComponent(slug)}`
-  : null;
+// The static site cannot safely hold a GitHub write token. The dialog collects details,
+// then hands the pre-filled issue to GitHub without exposing any credentials.
+const questionLabel = kind === 'source' ? `page:${sourceId}/${pagePath.replace(/\.md$/i, '')}` : '';
 const base = import.meta.env.BASE_URL;
 const hrefFor = (href) => withBase(base, href);
 ---
@@ -99,10 +98,32 @@ const hrefFor = (href) => withBase(base, href);
               <p class="qa-section__updated">Last updated: {formattedDate}</p>
             )}
             <h2 class="qa-section__heading">Questions</h2>
-            {raiseIssueUrl && (
-              <a href={raiseIssueUrl} target="_blank" rel="noopener noreferrer" class="button button--question">
-                Raise a question <span aria-hidden="true">↗</span>
-              </a>
+            {kind === 'source' && repo && (
+              <>
+                <button type="button" class="button button--question" data-question-open>
+                  Raise a question <span aria-hidden="true">+</span>
+                </button>
+                <dialog class="question-dialog" data-question-dialog data-question-label={questionLabel} data-question-repo={repo} data-question-slug={slug} aria-labelledby="question-dialog-title">
+                  <form class="question-dialog__surface" data-question-form>
+                    <div class="question-dialog__header">
+                      <div>
+                        <p class="eyebrow">Ask about this page</p>
+                        <h3 id="question-dialog-title">Raise a question</h3>
+                      </div>
+                      <button type="button" class="button button--ghost button--sm" data-question-close>Close</button>
+                    </div>
+                    <label for="question-title">Question</label>
+                    <input id="question-title" name="title" required maxlength="200" placeholder="What would you like to know?" />
+                    <label for="question-details">Details</label>
+                    <textarea id="question-details" name="details" required maxlength="5000" rows="5" placeholder="Add context or steps that will help answer your question."></textarea>
+                    <input class="question-dialog__trap" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                    <p class="question-dialog__hint">Your question is submitted securely and tagged to this documentation page.</p>
+                    <div class="question-dialog__actions">
+                      <button type="submit" class="button button--question">Continue to GitHub <span aria-hidden="true">↗</span></button>
+                    </div>
+                  </form>
+                </dialog>
+              </>
             )}
             {issues.length > 0 && (
               <ul class="qa-section__list">
@@ -139,6 +160,47 @@ const hrefFor = (href) => withBase(base, href);
   </div>
 
   <script is:inline>
+    const questionDialog = document.querySelector('[data-question-dialog]');
+    const questionOpen = document.querySelector('[data-question-open]');
+    const questionClose = document.querySelector('[data-question-close]');
+    const questionForm = document.querySelector('[data-question-form]');
+    const questionLabel = questionDialog?.dataset.questionLabel || '';
+    const questionRepo = questionDialog?.dataset.questionRepo || '';
+    const questionSlug = questionDialog?.dataset.questionSlug || '';
+    questionOpen?.addEventListener('click', () => questionDialog?.showModal());
+    questionClose?.addEventListener('click', () => questionDialog?.close());
+    questionDialog?.addEventListener('click', (event) => {
+      if (event.target === questionDialog) questionDialog.close();
+    });
+    questionForm?.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const form = new FormData(questionForm);
+      const title = String(form.get('title') || '').trim();
+      const details = String(form.get('details') || '').trim();
+      if (!title || !details) return;
+      const issueTitle = `Question about: ${questionSlug} — ${title}`;
+      const fallback = new URL(`https://github.com/${questionRepo}/issues/new`);
+      fallback.searchParams.set('title', issueTitle);
+      fallback.searchParams.set('body', details);
+      fallback.searchParams.set('labels', questionLabel);
+      const handoff = window.open('', '_blank');
+      try {
+        const response = await fetch('/api/questions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ title, details, repo: questionRepo, label: questionLabel, website: form.get('website') || '' })
+        });
+        if (!response.ok) throw new Error('Question service unavailable');
+        if (handoff) handoff.location = (await response.json()).url;
+        questionDialog?.close();
+      } catch {
+        // Static deployments can use GitHub's pre-filled form without exposing a token.
+        if (handoff) handoff.location = fallback.toString();
+        else window.location.href = fallback.toString();
+        questionDialog?.close();
+      }
+    });
+
     const docsShell = document.querySelector('[data-docs-shell]');
     const docsNav = docsShell?.querySelector('#docs-sidebar');
     const docsNavClose = docsShell?.querySelector('[data-docs-nav-close]');

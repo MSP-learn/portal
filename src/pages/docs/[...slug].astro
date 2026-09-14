@@ -29,7 +29,7 @@ function githubEditUrl(repository, branch, file) {
   return `${repository.replace(/\/$/, '')}/edit/${encodeURIComponent(branch)}/${path}`;
 }
 ---
-<DocsLayout title={`${page.title} · MSP Docs`} description={page.description} sidebar={docsData.sidebar} toc={toc} repoUrl={repoUrl} currentPath={page.href} updatedAt={page.updatedAt} issues={page.issues} kind={page.kind} sourceId={page.sourceId} repo={page.repo} slug={page.slug}>
+<DocsLayout title={`${page.title} · MSP Docs`} description={page.description} sidebar={docsData.sidebar} toc={toc} repoUrl={repoUrl} currentPath={page.href} updatedAt={page.updatedAt} issues={page.issues} kind={page.kind} sourceId={page.sourceId} repo={page.repo} slug={page.slug} pagePath={page.relativePath}>
   <header class="doc-header">
     <div class="doc-meta">
       <span class="pill">{page.category}</span>
